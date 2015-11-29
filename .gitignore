@@ -1,2 +1,5 @@
-.meteor/local
-.meteor/meteorite
+# Hide the API key!
+api_key.json
+
+# This can be npm install'd
+node_modules/

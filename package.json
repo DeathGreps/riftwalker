@@ -1,0 +1,43 @@
+{
+  "name": "riftwalker",
+  "version": "1.0.0",
+  "description": "A item set creator for League of Legends",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevdez/riftwalker.git"
+  },
+  "keywords": [
+    "League",
+    "Legends",
+    "gaming",
+    "Riot"
+  ],
+  "author": "Kevin Hernandez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevdez/riftwalker/issues"
+  },
+  "homepage": "https://github.com/kevdez/riftwalker#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "del": "^2.1.0",
+    "fs": "0.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1",
+    "merge-stream": "^1.0.0",
+    "mocha": "^2.3.4",
+    "path": "^0.12.7"
+  }
+}

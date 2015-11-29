@@ -1,0 +1,27 @@
+{
+  "name": "riftwalker",
+  "description": "A item set creator for League of Legends",
+  "main": "index.js",
+  "authors": [
+    "Kevin Hernandez"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "League",
+    "Legends",
+    "gaming",
+    "Riot"
+  ],
+  "homepage": "https://github.com/kevdez/riftwalker",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
