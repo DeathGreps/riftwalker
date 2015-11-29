@@ -61,7 +61,9 @@ gulp.task('sass', function(err) {
 
 gulp.task('js', function() {
     return gulp.src(dev_path.js+ '*.js')
-        .pipe(uglify())
+        .pipe(uglify({
+            mangle: false
+        }))
         .pipe(gulp.dest(build_path.js));
 });
 

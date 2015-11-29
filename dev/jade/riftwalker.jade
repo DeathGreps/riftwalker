@@ -6,14 +6,9 @@ block title
 block body
     
     #pageContent(ng-app='riftwalkerApp')
-        
         #pageTitle Riftwalker
-        input(type="text" ng-model="sometext")
-        h1 {{ sometext }}
-        h1 {{ wow }}
-        div
-            ul(ng-controller='regSelCtrl')
-                p.
-                    test {{ test }} end of the test.
-        div(ng-controller='ngAppDemoController')
-        | I can add {{a}} + {{b}} = {{a + b}}
+        div(ng-controller='RegionSelectorController')
+            select(name='regionSelect' id='regionSelect' ng-model='region.selectedRegion')
+                option(value='') Please select a region
+                option(ng-repeat="r in regions") {{r.region}}
+            p Rurrent region: {{selectedRegion.region}}
