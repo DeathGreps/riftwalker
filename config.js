@@ -12,7 +12,7 @@ var config = {
     }
 };
 
-config.port = process.env.PORT || 8080;
+config.port = process.env.PORT || 80;
 
 
 module.exports = config;
