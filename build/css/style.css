@@ -24,7 +24,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #31A2FF;
   background-color: #A0FAD3;
-  margin: 0px auto; }
+  margin: 0px; }
 
 #navbar {
   position: fixed;
@@ -47,6 +47,8 @@ body {
       font-size: 2em; } }
 
 #pageContent {
+  display: flex;
+  flex-direction: column;
   margin-left: 64px; }
   #pageContent p {
     width: 650px; }
@@ -77,6 +79,21 @@ body {
 
 .indent {
   margin-left: 2em; }
+
+#regionBox {
+  position: relative;
+  float: left;
+  width: 190px; }
+  #regionBox #regionLabel {
+    width: auto;
+    float: left;
+    margin: initial; }
+  #regionBox #regionSelect {
+    margin: initial;
+    float: right; }
+
+#ChampionData {
+  margin-top: 15px; }
 
 #logos {
   margin-top: 2em;

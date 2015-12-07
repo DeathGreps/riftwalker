@@ -3,15 +3,15 @@
 @import 'util';
 
 
-// * {
-//  @extend %testing-border;
-// }
+ // * {
+ //  @extend %testing-border;
+ // }
 
 body {
     font-family: $slabo-font;
     color: $color-secondary-1-0;
     background-color: $color-primary-1;
-    margin: 0px auto;
+    margin: 0px;
 }
 
 #navbar {
@@ -40,7 +40,8 @@ body {
 }
 
 #pageContent {
-
+    display: flex;
+    flex-direction: column;
     margin-left: 64px;
     p {
         width: 650px;
@@ -54,10 +55,6 @@ body {
             font-size: 1em;
         }
     }
-}
-
-#pageItem{
-
 }
 
 .bold {
@@ -80,6 +77,24 @@ body {
     margin-left: 2em;
 }
 
+#regionBox {
+    position: relative;
+    float:left;
+    width: 190px;
+    #regionLabel {
+        width: auto;
+        float: left;
+        margin: initial;
+    }
+    #regionSelect {
+        margin:initial;
+        float: right;
+    }
+}
+
+#ChampionData {
+    margin-top:15px;
+}
 
 #logos {
     margin-top: 2em;

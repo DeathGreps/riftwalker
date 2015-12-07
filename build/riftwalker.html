@@ -12,12 +12,11 @@
     <div id="navbar"><a href="index.html" class="homeButton">home</a><span>&nbsp&nbsp&nbsp|&nbsp&nbsp</span><a href="riftwalker.html" class="appButton">riftwalker</a></div>
     <div id="pageContent" ng-app="riftwalkerApp">
       <div id="pageTitle">Riftwalker</div>
-      <div ng-controller="RegionSelectorController">
-        <select name="regionSelect" id="regionSelect" ng-model="region.selectedRegion">
-          <option value="">Please select a region</option>
-          <option ng-repeat="r in regions">{{r.region}}</option>
-        </select>
-        <p>Rurrent region: {{selectedRegion.region}}</p>
+      <div id="regionBox" ng-controller="RegionSelectorController">
+        <p id="regionLabel">Current region:</p>
+        <select name="regionSelect" id="regionSelect" ng-options="reg as reg.region for reg in regions" ng-model="selectedRegion"></select>
+        <button ng-click="getChampionData(selectedRegion)">Click me! </button>
+        <p>what {{ championData }}</p>
       </div>
     </div>
     <script src="js/angular.js"></script>

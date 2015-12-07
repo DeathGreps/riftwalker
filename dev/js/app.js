@@ -1,7 +1,6 @@
 var app = angular.module('riftwalkerApp', []);
 
-app.controller('RegionSelectorController', function ($scope) {
-    var selectedRegion = {region: null};
+app.controller('RegionSelectorController', ['$scope', '$http', function ($scope, $http) {
     var regions = [
     {   
         region: 'BR',
@@ -62,7 +61,25 @@ app.controller('RegionSelectorController', function ($scope) {
         region: 'Global',
         host: 'global.api.pvp.net'
     }];
+    var selectedRegion = regions[6];
+    
+    var getChampionData = function(selRegion) {
+        $http({
+            method: 'GET',
+            url: '/api/staticdata/' + selRegion.host + '/' + selRegion.region
+        }).then(function successCallback(response) {
+        // this callback will be called asynchronously
+        // when the response is available
+        $scope.championData = response.data.data;
+        }, function errorCallback(response) {
+        // called asynchronously if an error occurs
+        // or server returns response with an error status.
+            console.log(response);
+        });
+    };
+
     $scope.regions = regions;
     $scope.selectedRegion = regions[6];
-});
-
+    $scope.getChampionData = getChampionData;
+    $scope.championData = '';
+}]);
