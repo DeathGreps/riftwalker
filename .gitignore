@@ -3,3 +3,8 @@ api_key.json
 
 # This can be npm install'd
 node_modules/
+
+# BOWER
+bower_components/
+
+
