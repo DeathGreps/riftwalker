@@ -16,7 +16,11 @@
         <p id="regionLabel">Current region:</p>
         <select name="regionSelect" id="regionSelect" ng-options="reg as reg.region for reg in regions" ng-model="selectedRegion"></select>
         <button ng-click="getChampionData(selectedRegion)">Click me! </button>
-        <p>what {{ championData }}</p>
+        <p>{{ championData }}</p>
+      </div>
+      <div id="mapSelector" ng-controller="MapSelectorController">
+        <p id="mapLabel">Select a map {{test}}:</p>
+        <select name="mapSelect" id="mapSelect" ng-options="" ng-model="selectedMap"></select>
       </div>
     </div>
     <script src="js/angular.js"></script>

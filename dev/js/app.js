@@ -83,3 +83,8 @@ app.controller('RegionSelectorController', ['$scope', '$http', function ($scope,
     $scope.getChampionData = getChampionData;
     $scope.championData = '';
 }]);
+
+app.controller('MapSelectorController', ['$scope', function($scope) {
+    $scope.test = "hi";
+
+}]);

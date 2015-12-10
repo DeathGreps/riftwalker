@@ -13,4 +13,8 @@ block body
             select(name='regionSelect' id='regionSelect' ng-options='reg as reg.region for reg in regions' ng-model='selectedRegion')
 
             button(ng-click='getChampionData(selectedRegion)') Click me! 
-            p what {{ championData }}
+            p {{ championData }}
+
+        #mapSelector(ng-controller='MapSelectorController')
+            p(id='mapLabel') Select a map {{test}}:
+            select(name='mapSelect' id='mapSelect' ng-options='' ng-model='selectedMap')
