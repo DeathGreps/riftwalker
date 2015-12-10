@@ -12,9 +12,18 @@ block body
             p(id='regionLabel') Current region:
             select(name='regionSelect' id='regionSelect' ng-options='reg as reg.region for reg in regions' ng-model='selectedRegion')
 
-            button(ng-click='getChampionData(selectedRegion)') Click me! 
+            //- button(ng-click='getChampionData(selectedRegion)') Click me! 
             p {{ championData }}
 
-        #mapSelector(ng-controller='MapSelectorController')
-            p(id='mapLabel') Select a map {{test}}:
-            select(name='mapSelect' id='mapSelect' ng-options='' ng-model='selectedMap')
+        #mapBox(ng-controller='MapSelectorController')
+            p(id='mapLabel') Select a map {{selectedMap}}:
+            select(name='mapSelect' id='mapSelect' ng-options='m as m.label for m in maps' ng-model='selectedMap')
+            p Item Set Type: {{ itemSetType }}
+            p Custom
+                input(type='radio' ng-model='itemSetType' ng-value='itemSetTypes[0]')
+            p Global
+                input(type='radio' ng-model='itemSetType' ng-value='itemSetTypes[1]')
+
+            select(name='modeSelect' id='modeSelect' ng-options='mo as mo.label for mo in gameModes' ng-model='selectedGameMode')
+            p Game Mode: {{ selectedGameMode }}
+                
