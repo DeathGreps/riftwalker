@@ -11,9 +11,19 @@ block body
         #regionBox(ng-controller='RegionSelectorController')
             p(id='regionLabel') Current region:
             select(name='regionSelect' id='regionSelect' ng-options='reg as reg.region for reg in regions' ng-model='selectedRegion')
+            p {{selectedRegion}}
 
-            //- button(ng-click='getChampionData(selectedRegion)') Click me! 
-            p {{ championData }}
+        #selectedChampionInformation(ng-controller='ChampionSelectorController')
+            p selected region in champion: {{selectedRegion}}
+            select(name='championSelect' id='championSelect' ng-options='v as v for (k, v) in championKeys' ng-change='changedChampionSelection(selectedChampion)' ng-model='selectedChampion')
+            h2 {{selectedChampionData.name}}
+            h2 {{selectedChampionData.key}}
+            h3 {{selectedChampionData.title}}
+            img(ng-if='selectedChampionData.image.full' ng-src='{{getChampionImage(selectedChampionData.image.full)}}')
+            h3 {{selectedChampionData.enemytyps}}
+            h3 {{selectedChampionData.blurb}}
+            p {{selectedChampionData.lore}}
+
 
         #mapBox(ng-controller='MapSelectorController')
             p(id='mapLabel') Select a map {{selectedMap}}:

@@ -15,7 +15,17 @@
       <div id="regionBox" ng-controller="RegionSelectorController">
         <p id="regionLabel">Current region:</p>
         <select name="regionSelect" id="regionSelect" ng-options="reg as reg.region for reg in regions" ng-model="selectedRegion"></select>
-        <p>{{ championData }}</p>
+        <p>{{selectedRegion}}</p>
+      </div>
+      <div id="selectedChampionInformation" ng-controller="ChampionSelectorController">
+        <p>selected region in champion: {{selectedRegion}}</p>
+        <select name="championSelect" id="championSelect" ng-options="v as v for (k, v) in championKeys" ng-change="changedChampionSelection(selectedChampion)" ng-model="selectedChampion"></select>
+        <h2>{{selectedChampionData.name}}</h2>
+        <h2>{{selectedChampionData.key}}</h2>
+        <h3>{{selectedChampionData.title}}</h3><img ng-if="selectedChampionData.image.full" ng-src="{{getChampionImage(selectedChampionData.image.full)}}">
+        <h3>{{selectedChampionData.enemytyps}}</h3>
+        <h3>{{selectedChampionData.blurb}}</h3>
+        <p>{{selectedChampionData.lore}}</p>
       </div>
       <div id="mapBox" ng-controller="MapSelectorController">
         <p id="mapLabel">Select a map {{selectedMap}}:</p>
@@ -33,8 +43,10 @@
     </div>
     <script src="js/angular.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/dataService.js">   </script>
     <script src="js/regionSelectorController.js"></script>
     <script src="js/mapSelectorController.js"></script>
+    <script src="js/championSelectorController.js"></script>
     <div id="attribution">
       Riftwalker isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
       

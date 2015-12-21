@@ -82,8 +82,7 @@ body {
 
 #regionBox {
   position: relative;
-  float: left;
-  width: 190px; }
+  float: left; }
   #regionBox #regionLabel {
     width: auto;
     float: left;
