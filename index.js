@@ -9,7 +9,7 @@ var apiRoutes = require('./routes/api');
 var app = express();
 
 // REGISTER OUR ROUTES
-app.use(express.static('build'));
+app.use(express.static('./'));
 app.use('/api', apiRoutes);
 
 app.use(favicon(__dirname + '/favicon.ico'));

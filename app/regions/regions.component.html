@@ -1,0 +1,16 @@
+<h2>Regions:</h2>
+<form>
+  <label>Region</label>
+  <select class="form-control"
+    required>
+    <option
+      *ngFor="#r of regions"
+      [value]="r"
+      (click)="selectRegion(r)">
+        {{r.region}}
+    </option>
+  </select>
+</form>
+<div *ngIf="selectedRegion">
+  selectedRegion = { region: {{selectedRegion.region}}, platformID: {{selectedRegion.platformID}}, host: {{selectedRegion.host}} }
+</div>

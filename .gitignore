@@ -6,3 +6,7 @@ node_modules/
 
 # BOWER
 bower_components/
+
+# Generated JS and .map files
+app/**/*.js
+app/**/*.map

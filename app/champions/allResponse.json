@@ -1,0 +1,4192 @@
+{
+   "keys": {
+      "35": "Shaco",
+      "36": "DrMundo",
+      "33": "Rammus",
+      "34": "Anivia",
+      "39": "Irelia",
+      "157": "Yasuo",
+      "37": "Sona",
+      "38": "Kassadin",
+      "154": "Zac",
+      "150": "Gnar",
+      "43": "Karma",
+      "42": "Corki",
+      "41": "Gangplank",
+      "40": "Janna",
+      "202": "Jhin",
+      "203": "Kindred",
+      "201": "Braum",
+      "22": "Ashe",
+      "23": "Tryndamere",
+      "24": "Jax",
+      "25": "Morgana",
+      "26": "Zilean",
+      "27": "Singed",
+      "28": "Evelynn",
+      "29": "Twitch",
+      "3": "Galio",
+      "161": "Velkoz",
+      "2": "Olaf",
+      "1": "Annie",
+      "30": "Karthus",
+      "7": "Leblanc",
+      "6": "Urgot",
+      "32": "Amumu",
+      "5": "XinZhao",
+      "31": "Chogath",
+      "4": "TwistedFate",
+      "9": "FiddleSticks",
+      "8": "Vladimir",
+      "19": "Warwick",
+      "17": "Teemo",
+      "18": "Tristana",
+      "15": "Sivir",
+      "16": "Soraka",
+      "13": "Ryze",
+      "14": "Sion",
+      "11": "MasterYi",
+      "12": "Alistar",
+      "21": "MissFortune",
+      "20": "Nunu",
+      "107": "Rengar",
+      "106": "Volibear",
+      "105": "Fizz",
+      "104": "Graves",
+      "103": "Ahri",
+      "102": "Shyvana",
+      "99": "Lux",
+      "101": "Xerath",
+      "412": "Thresh",
+      "98": "Shen",
+      "96": "KogMaw",
+      "222": "Jinx",
+      "223": "TahmKench",
+      "92": "Riven",
+      "91": "Talon",
+      "90": "Malzahar",
+      "10": "Kayle",
+      "429": "Kalista",
+      "421": "RekSai",
+      "420": "Illaoi",
+      "89": "Leona",
+      "117": "Lulu",
+      "79": "Gragas",
+      "78": "Poppy",
+      "114": "Fiora",
+      "115": "Ziggs",
+      "77": "Udyr",
+      "112": "Viktor",
+      "113": "Sejuani",
+      "110": "Varus",
+      "111": "Nautilus",
+      "119": "Draven",
+      "432": "Bard",
+      "82": "Mordekaiser",
+      "245": "Ekko",
+      "83": "Yorick",
+      "80": "Pantheon",
+      "81": "Ezreal",
+      "86": "Garen",
+      "84": "Akali",
+      "85": "Kennen",
+      "67": "Vayne",
+      "126": "Jayce",
+      "127": "Lissandra",
+      "69": "Cassiopeia",
+      "68": "Rumble",
+      "121": "Khazix",
+      "122": "Darius",
+      "120": "Hecarim",
+      "72": "Skarner",
+      "236": "Lucian",
+      "74": "Heimerdinger",
+      "75": "Nasus",
+      "238": "Zed",
+      "76": "Nidalee",
+      "134": "Syndra",
+      "59": "JarvanIV",
+      "133": "Quinn",
+      "58": "Renekton",
+      "57": "Maokai",
+      "56": "Nocturne",
+      "55": "Katarina",
+      "64": "LeeSin",
+      "62": "MonkeyKing",
+      "268": "Azir",
+      "63": "Brand",
+      "131": "Diana",
+      "60": "Elise",
+      "267": "Nami",
+      "266": "Aatrox",
+      "61": "Orianna",
+      "143": "Zyra",
+      "48": "Trundle",
+      "45": "Veigar",
+      "44": "Taric",
+      "51": "Caitlyn",
+      "53": "Blitzcrank",
+      "54": "Malphite",
+      "254": "Vi",
+      "50": "Swain"
+   },
+   "data": {
+      "Aatrox": {
+         "tags": [
+            "Fighter",
+            "Tank"
+         ],
+         "stats": {
+            "attackrange": 150,
+            "mpperlevel": 45,
+            "mp": 105.6,
+            "attackdamage": 60.376,
+            "hp": 537.8,
+            "hpperlevel": 85,
+            "attackdamageperlevel": 3.2,
+            "armor": 24.384,
+            "mpregenperlevel": 0,
+            "hpregen": 6.59,
+            "critperlevel": 0,
+            "spellblockperlevel": 1.25,
+            "mpregen": 0,
+            "attackspeedperlevel": 3,
+            "spellblock": 32.1,
+            "movespeed": 345,
+            "attackspeedoffset": -0.04,
+            "crit": 0,
+            "hpregenperlevel": 0.5,
+            "armorperlevel": 3.8
+         },
+         "enemytips": [
+            "When Aatrox takes fatal damage he is healed for the amount currently in his resource bar, landing a fatal blow on him while the resource bar is low will result in him reviving with a lower amount of Health.",
+            "When Aatrox casts Dark Flight towards your location, avoid being knocked up by moving away from the center of impact.",
+            "Aatrox is auto attack reliant for most of his damage and survivability, reducing his attack speed by purchasing Randuin's Omen or Frozen Heart can help reduce both of those components greatly."
+         ],
+         "recommended": [
+            {
+               "champion": "Aatrox",
+               "title": "AatroxASC",
+               "map": "CS",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1062,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 2
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3047,
+                           "count": 1
+                        },
+                        {
+                           "id": 3181,
+                           "count": 1
+                        },
+                        {
+                           "id": 3153,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3142,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3184,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3065,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2044,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ASCENSION"
+            },
+            {
+               "champion": "Aatrox",
+               "title": "AatroxDM",
+               "map": "CS",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 1062,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 3
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3111,
+                           "count": 1
+                        },
+                        {
+                           "id": 3144,
+                           "count": 1
+                        },
+                        {
+                           "id": 3211,
+                           "count": 1
+                        }
+                     ],
+                     "type": "early"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3153,
+                           "count": 1
+                        },
+                        {
+                           "id": 3742,
+                           "count": 1
+                        },
+                        {
+                           "id": 3065,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3748,
+                           "count": 1
+                        },
+                        {
+                           "id": 3812,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3102,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3026,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ODIN"
+            },
+            {
+               "champion": "Aatrox",
+               "title": "AatroxFIRSTBLOOD",
+               "map": "HA",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 3077,
+                           "count": 1
+                        },
+                        {
+                           "id": 1053,
+                           "count": 1
+                        }
+                     ],
+                     "type": "early"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3047,
+                           "count": 1
+                        },
+                        {
+                           "id": 3153,
+                           "count": 1
+                        },
+                        {
+                           "id": 3812,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3065,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1041,
+                           "count": 1
+                        },
+                        {
+                           "id": 2031,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "startingjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 3706,
+                           "count": 1
+                        },
+                        {
+                           "id": 1043,
+                           "count": 1
+                        }
+                     ],
+                     "type": "earlyjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3047,
+                           "count": 1
+                        },
+                        {
+                           "id": 1403,
+                           "count": 1
+                        },
+                        {
+                           "id": 3153,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essentialjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3812,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3065,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2043,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "FIRSTBLOOD"
+            },
+            {
+               "champion": "Aatrox",
+               "title": "AatroxSR",
+               "map": "SR",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 3077,
+                           "count": 1
+                        },
+                        {
+                           "id": 1053,
+                           "count": 1
+                        }
+                     ],
+                     "type": "early"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3047,
+                           "count": 1
+                        },
+                        {
+                           "id": 3153,
+                           "count": 1
+                        },
+                        {
+                           "id": 3812,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3065,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1041,
+                           "count": 1
+                        },
+                        {
+                           "id": 2031,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "startingjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 3706,
+                           "count": 1
+                        },
+                        {
+                           "id": 1043,
+                           "count": 1
+                        }
+                     ],
+                     "type": "earlyjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3047,
+                           "count": 1
+                        },
+                        {
+                           "id": 1403,
+                           "count": 1
+                        },
+                        {
+                           "id": 3153,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essentialjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3812,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3065,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2043,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "CLASSIC"
+            },
+            {
+               "champion": "Aatrox",
+               "title": "AatroxTT",
+               "map": "TT",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 2
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3153,
+                           "count": 1
+                        },
+                        {
+                           "id": 3047,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3142,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3181,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3065,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "CLASSIC"
+            },
+            {
+               "champion": "Aatrox",
+               "title": "Beginner",
+               "map": "SR",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [{
+                        "id": 1054,
+                        "count": 1
+                     }],
+                     "type": "beginner_starter"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1054,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_starter"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 1036,
+                           "count": 1
+                        },
+                        {
+                           "id": 1053,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_advanced"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 1029,
+                           "count": 1
+                        },
+                        {
+                           "id": 3047,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_movementspeed"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 1053,
+                           "count": 1
+                        },
+                        {
+                           "id": 1038,
+                           "count": 1
+                        },
+                        {
+                           "id": 3072,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_legendaryitem"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3068,
+                           "count": 1
+                        },
+                        {
+                           "id": 3031,
+                           "count": 1
+                        },
+                        {
+                           "id": 3046,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_morelegendaryitems"
+                  }
+               ],
+               "type": "riot",
+               "mode": "INTRO"
+            },
+            {
+               "champion": "Aatrox",
+               "title": "Map12",
+               "map": "HA",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3097,
+                           "count": 1
+                        },
+                        {
+                           "id": 1054,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 2
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3153,
+                           "count": 1
+                        },
+                        {
+                           "id": 3742,
+                           "count": 1
+                        },
+                        {
+                           "id": 3047,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3072,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3065,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3401,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ARAM"
+            }
+         ],
+         "image": {
+            "w": 48,
+            "full": "Aatrox.png",
+            "sprite": "champion0.png",
+            "group": "champion",
+            "h": 48,
+            "y": 0,
+            "x": 0
+         },
+         "spells": [
+            {
+               "range": [
+                  600,
+                  600,
+                  600,
+                  600,
+                  600
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e1 }} -> {{ e1NL }}",
+                     "{{ cooldown }} -> {{ cooldownnNL }}"
+                  ],
+                  "label": [
+                     "Damage",
+                     "Cooldown"
+                  ]
+               },
+               "resource": "{{ e3 }}% of current Health ",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "70/115/160/205/250",
+                  "22/20/18/16/14",
+                  "10",
+                  "225",
+                  "1"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "AatroxQ.png",
+                  "sprite": "spell0.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 48,
+                  "x": 192
+               },
+               "cooldown": [
+                  16,
+                  15,
+                  14,
+                  13,
+                  12
+               ],
+               "cost": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+               ],
+               "vars": [{
+                  "link": "bonusattackdamage",
+                  "coeff": [0.6],
+                  "key": "a1"
+               }],
+               "sanitizedDescription": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
+               "rangeBurn": "600",
+               "costType": "pofcurrentHealth",
+               "effect": [
+                  null,
+                  [
+                     70,
+                     115,
+                     160,
+                     205,
+                     250
+                  ],
+                  [
+                     22,
+                     20,
+                     18,
+                     16,
+                     14
+                  ],
+                  [
+                     10,
+                     10,
+                     10,
+                     10,
+                     10
+                  ],
+                  [
+                     225,
+                     225,
+                     225,
+                     225,
+                     225
+                  ],
+                  [
+                     1,
+                     1,
+                     1,
+                     1,
+                     1
+                  ]
+               ],
+               "cooldownBurn": "16/15/14/13/12",
+               "description": "Aatrox takes flight and slams down at a targeted location, dealing damage and knocking up enemies at the center of impact.",
+               "name": "Dark Flight",
+               "sanitizedTooltip": "Aatrox takes flight and slams down at a targeted location, dealing {{ e1 }} (+{{ a1 }}) physical damage to all nearby enemies and knocking up targets at the center of impact for {{ e5 }} second.",
+               "key": "AatroxQ",
+               "costBurn": "0",
+               "tooltip": "Aatrox takes flight and slams down at a targeted location, dealing {{ e1 }}<span class=\"colorF88017\"> (+{{ a1 }})<\/span> physical damage to all nearby enemies and knocking up targets at the center of impact for {{ e5 }} second."
+            },
+            {
+               "range": "self",
+               "leveltip": {
+                  "effect": [
+                     "{{ e3 }} -> {{ e3NL }}",
+                     "{{ e2 }} -> {{ e2NL }}"
+                  ],
+                  "label": [
+                     "Heal",
+                     "Bonus Damage"
+                  ]
+               },
+               "resource": "No Cost",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "200",
+                  "60/95/130/165/200",
+                  "20/25/30/35/40",
+                  "25",
+                  "50",
+                  "0.5"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "AatroxW.png",
+                  "sprite": "spell0.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 48,
+                  "x": 240
+               },
+               "cooldown": [
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.5
+               ],
+               "cost": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+               ],
+               "vars": [
+                  {
+                     "link": "bonusattackdamage",
+                     "coeff": [0.25],
+                     "key": "a1"
+                  },
+                  {
+                     "link": "bonusattackdamage",
+                     "coeff": [1],
+                     "key": "a2"
+                  }
+               ],
+               "sanitizedDescription": "While toggled on Aatrox deals bonus damage every third subsequent attack at the expense of his own Health. While toggled off Aatrox restores Health every third subsequent attack.",
+               "rangeBurn": "self",
+               "costType": "NoCost",
+               "effect": [
+                  null,
+                  [
+                     200,
+                     200,
+                     200,
+                     200,
+                     200
+                  ],
+                  [
+                     60,
+                     95,
+                     130,
+                     165,
+                     200
+                  ],
+                  [
+                     20,
+                     25,
+                     30,
+                     35,
+                     40
+                  ],
+                  [
+                     25,
+                     25,
+                     25,
+                     25,
+                     25
+                  ],
+                  [
+                     50,
+                     50,
+                     50,
+                     50,
+                     50
+                  ],
+                  [
+                     0.5,
+                     0.5,
+                     0.5,
+                     0.5,
+                     0.5
+                  ]
+               ],
+               "cooldownBurn": "0.5",
+               "description": "While toggled on Aatrox deals bonus damage every third subsequent attack at the expense of his own Health. While toggled off Aatrox restores Health every third subsequent attack.",
+               "name": "Blood Thirst / Blood Price",
+               "sanitizedTooltip": "While toggled off Aatrox benefits from Blood Thirst, while toggled on Blood Price is activated and removes Blood Thirst. Blood Thirst: Every third attack, Aatrox restores {{ e3 }} (+{{ a1 }}) Health, increased by {{ e1 }}% ({{ f5 }}) when below half Health. Blood Price: Every third attack, Aatrox deals {{ e2 }} (+{{ a2 }}) bonus physical damage and loses {{ f4 }} Health.",
+               "key": "AatroxW",
+               "costBurn": "0",
+               "tooltip": "While toggled off Aatrox benefits from Blood Thirst, while toggled on Blood Price is activated and removes Blood Thirst.<br><br><span class=\"colorFF9900\">Blood Thirst: <\/span>Every third attack, Aatrox restores {{ e3 }}<span class=\"colorF88017\"> (+{{ a1 }})<\/span> Health, increased by {{ e1 }}% ({{ f5 }}) when below half Health.<br><br><span class=\"colorFF9900\">Blood Price: <\/span>Every third attack, Aatrox deals {{ e2 }}<span class=\"colorF88017\"> (+{{ a2 }})<\/span> <\/span>bonus physical damage and loses <span class=\"colorCC3300\">{{ f4 }}<\/span> Health."
+            },
+            {
+               "range": [
+                  1000,
+                  1000,
+                  1000,
+                  1000,
+                  1000
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e1 }} -> {{ e1NL }}",
+                     "{{ e4 }} -> {{ e4NL }}",
+                     "{{ cooldown }} -> {{ cooldownnNL }}"
+                  ],
+                  "label": [
+                     "Damage",
+                     "Duration",
+                     "Cooldown"
+                  ]
+               },
+               "resource": "{{ e5 }}% of current Health ",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "75/110/145/180/215",
+                  "40",
+                  "15",
+                  "1.75/2/2.25/2.5/2.75",
+                  "5"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "AatroxE.png",
+                  "sprite": "spell0.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 48,
+                  "x": 288
+               },
+               "cooldown": [
+                  12,
+                  11,
+                  10,
+                  9,
+                  8
+               ],
+               "cost": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+               ],
+               "vars": [
+                  {
+                     "link": "spelldamage",
+                     "coeff": [0.6],
+                     "key": "a1"
+                  },
+                  {
+                     "link": "bonusattackdamage",
+                     "coeff": [0.6],
+                     "key": "a2"
+                  }
+               ],
+               "sanitizedDescription": "Aatrox unleashes the power of his blade, dealing damage to all enemies hit and slowing them.",
+               "rangeBurn": "1000",
+               "costType": "pofcurrentHealth",
+               "effect": [
+                  null,
+                  [
+                     75,
+                     110,
+                     145,
+                     180,
+                     215
+                  ],
+                  [
+                     40,
+                     40,
+                     40,
+                     40,
+                     40
+                  ],
+                  [
+                     15,
+                     15,
+                     15,
+                     15,
+                     15
+                  ],
+                  [
+                     1.75,
+                     2,
+                     2.25,
+                     2.5,
+                     2.75
+                  ],
+                  [
+                     5,
+                     5,
+                     5,
+                     5,
+                     5
+                  ]
+               ],
+               "cooldownBurn": "12/11/10/9/8",
+               "description": "Aatrox unleashes the power of his blade, dealing damage to all enemies hit and slowing them.",
+               "name": "Blades of Torment",
+               "sanitizedTooltip": "Aatrox unleashes the power of his blade, dealing {{ e1 }} (+{{ a1 }}) (+{{ a2 }}) Magic Damage to all enemies hit and slowing them by {{ e2 }}% for {{ e4 }} seconds.",
+               "key": "AatroxE",
+               "costBurn": "0",
+               "tooltip": "Aatrox unleashes the power of his blade, dealing {{ e1 }} <span class=\"color99FF99\">(+{{ a1 }}) <span class=\"colorF88017\">(+{{ a2 }})<\/span><\/span> Magic Damage to all enemies hit and slowing them by {{ e2 }}% for {{ e4 }} seconds."
+            },
+            {
+               "range": [
+                  550,
+                  550,
+                  550
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e2 }} -> {{ e2NL }}",
+                     "{{ e3 }}% -> {{ e3NL }}%",
+                     "{{ cooldown }} -> {{ cooldownnNL }}"
+                  ],
+                  "label": [
+                     "Damage",
+                     "Attack Speed",
+                     "Cooldown"
+                  ]
+               },
+               "resource": "No Cost",
+               "maxrank": 3,
+               "effectBurn": [
+                  "",
+                  "12",
+                  "200/300/400",
+                  "40/50/60",
+                  "10",
+                  "100/175/250",
+                  "50/65/80",
+                  "20"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "AatroxR.png",
+                  "sprite": "spell0.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 48,
+                  "x": 336
+               },
+               "cooldown": [
+                  100,
+                  85,
+                  70
+               ],
+               "cost": [
+                  0,
+                  0,
+                  0
+               ],
+               "vars": [{
+                  "link": "spelldamage",
+                  "coeff": [1],
+                  "key": "a1"
+               }],
+               "sanitizedDescription": "Aatrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
+               "rangeBurn": "550",
+               "costType": "NoCost",
+               "effect": [
+                  null,
+                  [
+                     12,
+                     12,
+                     12
+                  ],
+                  [
+                     200,
+                     300,
+                     400
+                  ],
+                  [
+                     40,
+                     50,
+                     60
+                  ],
+                  [
+                     10,
+                     10,
+                     10
+                  ],
+                  [
+                     100,
+                     175,
+                     250
+                  ],
+                  [
+                     50,
+                     65,
+                     80
+                  ],
+                  [
+                     20,
+                     20,
+                     20
+                  ]
+               ],
+               "cooldownBurn": "100/85/70",
+               "description": "Aatrox draws in the blood of his foes, damaging all nearby enemy champions around him and gaining increased Attack Speed and bonus Attack Range for a short duration.",
+               "name": "Massacre",
+               "sanitizedTooltip": "Aatrox draws in the blood of his foes, dealing {{ e2 }} (+{{ a1 }}) magic damage to all enemy champions around him. Massacre then fills Aatrox's Blood Well by {{ e7 }}% for each champion hit and grants him {{ e3 }}% attack speed and 175 attack range for 12 seconds.",
+               "key": "AatroxR",
+               "costBurn": "0",
+               "tooltip": "Aatrox draws in the blood of his foes, dealing {{ e2 }} <span class=\"color99FF99\">(+{{ a1 }})<\/span> magic damage to all enemy champions around him. Massacre then fills Aatrox's Blood Well by {{ e7 }}% for each champion hit and grants him {{ e3 }}% attack speed and 175 attack range for 12 seconds."
+            }
+         ],
+         "blurb": "Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox's ...",
+         "allytips": [
+            "Avoid engaging in a fight with low health unless your Blood Well is full so that you regain enough health to continue fighting.",
+            "Building Life Steal can be very potent on Aatrox to help compensate for his health costs.",
+            "Massacre is great at turning the tide of a battle. Make sure to use it at the right moment to maximize its benefits."
+         ],
+         "info": {
+            "defense": 4,
+            "magic": 3,
+            "difficulty": 4,
+            "attack": 8
+         },
+         "lore": "Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox's seemingly living blade drinks in their blood, empowering him and fueling his brutal, elegant campaign of slaughter.<br><br>The earliest tale of Aatrox is as old as recorded history. It tells of a war between two great factions remembered only as the Protectorate and the Magelords. Over time, the Magelords won a series of crushing victories, leaving them on the brink of obliterating their sworn enemy forever. On the day of their final confrontation, the Protectorate army found themselves outnumbered, exhausted, and poorly equipped. They braced for inevitable defeat.<br><br>Just when all hope seemed lost, Aatrox appeared among the ranks of the Protectorate. With but a few words, he urged the soldiers to fight to the last before throwing himself into battle. His presence inspired the desperate warriors. At first, they could only watch in awe as this unknown hero cleaved through their enemies, his body and blade moving in unison as if one being. Soon, the warriors found themselves imbued with a potent thirst for battle. They followed Aatrox into the fray, each fighting with the furious strength of ten until they had won a most unlikely victory.<br><br>Aatrox vanished after that battle, but the Protectorate army's newfound fury did not. Their surprising triumph led to many more until they were able to finally return home victorious. Their countrymen hailed them as heroes, but though they had saved their entire civilization from destruction, darkness lingered in the mind of each warrior. Something within them had changed. Over time, their memories of battle faded, only to be replaced with a grim revelation: their acts of heroism were, in fact, brutal atrocities committed by their own hands.<br><br>Tales like these appear among the myths of many cultures. If they are all to be believed, Aatrox's presence has changed the course of some of the most important wars in history. Though these stories remember him as a savior in dark times, Aatrox's true legacy may be a world filled with conflict and strife.<br><br>''Some fight for honor, some fight for glory. It matters only that you fight.''<br>-- Aatrox",
+         "id": 266,
+         "title": "the Darkin Blade",
+         "name": "Aatrox",
+         "passive": {
+            "sanitizedDescription": "When using an ability that costs Health, Aatrox stores the self-inflicted damage into the Blood Well. Upon taking fatal damage, Aatrox extracts the blood from the well and recovers it as Health over a brief duration. Additionally, Aatrox gains 1% Attack Speed for every 2% blood that is in the well.",
+            "description": "When using an ability that costs Health, Aatrox stores the self-inflicted damage into the Blood Well. Upon taking fatal damage, Aatrox extracts the blood from the well and recovers it as Health over a brief duration. Additionally, Aatrox gains 1% Attack Speed for every 2% blood that is in the well.",
+            "name": "Blood Well",
+            "image": {
+               "w": 48,
+               "full": "Aatrox_Passive.png",
+               "sprite": "passive0.png",
+               "group": "passive",
+               "h": 48,
+               "y": 0,
+               "x": 0
+            }
+         },
+         "partype": "BloodWell",
+         "key": "Aatrox",
+         "skins": [
+            {
+               "id": 266000,
+               "num": 0,
+               "name": "default"
+            },
+            {
+               "id": 266001,
+               "num": 1,
+               "name": "Justicar Aatrox"
+            },
+            {
+               "id": 266002,
+               "num": 2,
+               "name": "Mecha Aatrox"
+            },
+            {
+               "id": 266003,
+               "num": 3,
+               "name": "Sea Hunter Aatrox"
+            }
+         ]
+      },
+      "JarvanIV": {
+         "tags": [
+            "Tank",
+            "Fighter"
+         ],
+         "stats": {
+            "attackrange": 175,
+            "mpperlevel": 40,
+            "mp": 302.2,
+            "attackdamage": 55.712,
+            "hp": 571.2,
+            "hpperlevel": 90,
+            "attackdamageperlevel": 3.4,
+            "armor": 29,
+            "mpregenperlevel": 0.45,
+            "hpregen": 8.175,
+            "critperlevel": 0,
+            "spellblockperlevel": 1.25,
+            "mpregen": 6.755,
+            "attackspeedperlevel": 2.5,
+            "spellblock": 32.1,
+            "movespeed": 340,
+            "attackspeedoffset": -0.05,
+            "crit": 0,
+            "hpregenperlevel": 0.7,
+            "armorperlevel": 3.6
+         },
+         "enemytips": [
+            "Keep out of the path between Jarvan IV and his Demacian Standard to avoid being knocked up in the air.",
+            "Cataclysm's terrain is a frightening force to fight against, but movement abilities can go through it."
+         ],
+         "recommended": [
+            {
+               "champion": "JarvanIV",
+               "title": "Beginner",
+               "priority": false,
+               "map": "SR",
+               "blocks": [
+                  {
+                     "items": [{
+                        "id": 1055,
+                        "count": 1
+                     }],
+                     "type": "beginner_Starter"
+                  },
+                  {
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_Starter"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 1028,
+                           "count": 1
+                        },
+                        {
+                           "id": 1036,
+                           "count": 1
+                        },
+                        {
+                           "id": 3044,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_Advanced"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 1029,
+                           "count": 1
+                        },
+                        {
+                           "id": 3047,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_MovementSpeed"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 3044,
+                           "count": 1
+                        },
+                        {
+                           "id": 3057,
+                           "count": 1
+                        },
+                        {
+                           "id": 3086,
+                           "count": 1
+                        },
+                        {
+                           "id": 3078,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_LegendaryItem"
+                  },
+                  {
+                     "items": [
+                        {
+                           "id": 3105,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        },
+                        {
+                           "id": 3102,
+                           "count": 1
+                        },
+                        {
+                           "id": 3068,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_MoreLegendaryItems"
+                  }
+               ],
+               "type": "riot",
+               "mode": "INTRO"
+            },
+            {
+               "champion": "JarvanIV",
+               "title": "JarvanIVASC",
+               "map": "CS",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 1062,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 2
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3111,
+                           "count": 1
+                        },
+                        {
+                           "id": 3044,
+                           "count": 1
+                        },
+                        {
+                           "id": 3134,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3022,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2004,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ASCENSION"
+            },
+            {
+               "champion": "JarvanIV",
+               "title": "JarvanIVDM",
+               "map": "CS",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1062,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 2031,
+                           "count": 1
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3047,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3742,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3180,
+                           "count": 1
+                        },
+                        {
+                           "id": 3110,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ODIN"
+            },
+            {
+               "champion": "JarvanIV",
+               "title": "JarvanIVFIRSTBLOOD",
+               "map": "HA",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2033,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 3077,
+                           "count": 1
+                        },
+                        {
+                           "id": 1011,
+                           "count": 1
+                        }
+                     ],
+                     "type": "early"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3111,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3742,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3071,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3190,
+                           "count": 1
+                        },
+                        {
+                           "id": 3110,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1039,
+                           "count": 1
+                        },
+                        {
+                           "id": 2031,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "startingjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3706,
+                           "count": 1
+                        },
+                        {
+                           "id": 3133,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        }
+                     ],
+                     "type": "earlyjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1400,
+                           "count": 1
+                        },
+                        {
+                           "id": 3047,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essentialjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3742,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3190,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2043,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "FIRSTBLOOD"
+            },
+            {
+               "champion": "JarvanIV",
+               "title": "JarvanIVSR",
+               "map": "SR",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2033,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 3077,
+                           "count": 1
+                        },
+                        {
+                           "id": 1011,
+                           "count": 1
+                        }
+                     ],
+                     "type": "early"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3111,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3742,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3071,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3190,
+                           "count": 1
+                        },
+                        {
+                           "id": 3110,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1039,
+                           "count": 1
+                        },
+                        {
+                           "id": 2031,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "startingjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3706,
+                           "count": 1
+                        },
+                        {
+                           "id": 3133,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        }
+                     ],
+                     "type": "earlyjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1400,
+                           "count": 1
+                        },
+                        {
+                           "id": 3047,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essentialjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3742,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3190,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2043,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "CLASSIC"
+            },
+            {
+               "champion": "JarvanIV",
+               "title": "JarvanIVTT",
+               "map": "TT",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 2
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3077,
+                           "count": 1
+                        },
+                        {
+                           "id": 1011,
+                           "count": 1
+                        }
+                     ],
+                     "type": "early"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3111,
+                           "count": 1
+                        },
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3742,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3071,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3102,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3084,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1039,
+                           "count": 1
+                        },
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        }
+                     ],
+                     "type": "startingjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3706,
+                           "count": 1
+                        },
+                        {
+                           "id": 3133,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        }
+                     ],
+                     "type": "earlyjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1400,
+                           "count": 1
+                        },
+                        {
+                           "id": 3111,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essentialjungle"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3074,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3742,
+                           "count": 1
+                        },
+                        {
+                           "id": 3102,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "CLASSIC"
+            },
+            {
+               "champion": "JarvanIV",
+               "title": "Map12",
+               "map": "HA",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3077,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 3
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3111,
+                           "count": 1
+                        },
+                        {
+                           "id": 3748,
+                           "count": 1
+                        },
+                        {
+                           "id": 3071,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3812,
+                           "count": 1
+                        },
+                        {
+                           "id": 3156,
+                           "count": 1
+                        },
+                        {
+                           "id": 3142,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3742,
+                           "count": 1
+                        },
+                        {
+                           "id": 3143,
+                           "count": 1
+                        },
+                        {
+                           "id": 3190,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ARAM"
+            }
+         ],
+         "image": {
+            "w": 48,
+            "full": "JarvanIV.png",
+            "sprite": "champion1.png",
+            "group": "champion",
+            "h": 48,
+            "y": 0,
+            "x": 288
+         },
+         "spells": [
+            {
+               "range": [
+                  770,
+                  770,
+                  770,
+                  770,
+                  770
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e1 }} -> {{ e1NL }}",
+                     "{{ e2 }}% -> {{ e2NL }}%",
+                     "{{ cooldown }} -> {{ cooldownnNL }}",
+                     "{{ cost }} -> {{ costnNL }}"
+                  ],
+                  "label": [
+                     "Damage",
+                     "Armor Reduction",
+                     "Cooldown",
+                     "Mana Cost"
+                  ]
+               },
+               "resource": "{{ cost }} Mana",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "70/115/160/205/250",
+                  "10/14/18/22/26"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "JarvanIVDragonStrike.png",
+                  "sprite": "spell4.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 0,
+                  "x": 432
+               },
+               "cooldown": [
+                  10,
+                  9,
+                  8,
+                  7,
+                  6
+               ],
+               "cost": [
+                  45,
+                  50,
+                  55,
+                  60,
+                  65
+               ],
+               "vars": [{
+                  "link": "bonusattackdamage",
+                  "coeff": [1.1],
+                  "key": "f1"
+               }],
+               "sanitizedDescription": "Jarvan IV extends his lance, dealing physical damage and lowering the Armor of all enemies in its path. Additionally, this will pull Jarvan to his Demacian Standard, knocking up enemies in his path.",
+               "rangeBurn": "770",
+               "costType": "Mana",
+               "effect": [
+                  null,
+                  [
+                     70,
+                     115,
+                     160,
+                     205,
+                     250
+                  ],
+                  [
+                     10,
+                     14,
+                     18,
+                     22,
+                     26
+                  ]
+               ],
+               "cooldownBurn": "10/9/8/7/6",
+               "description": "Jarvan IV extends his lance, dealing physical damage and lowering the Armor of all enemies in its path. Additionally, this will pull Jarvan to his Demacian Standard, knocking up enemies in his path.",
+               "name": "Dragon Strike",
+               "sanitizedTooltip": "Extends Jarvan IV's lance dealing {{ e1 }} (+{{ f1 }}) physical damage and lowering the Armor of all enemies hit by {{ e2 }}% for 3 seconds. If the lance contacts Demacian Standard it will pull Jarvan IV to its location, knocking up enemies in his path.",
+               "key": "JarvanIVDragonStrike",
+               "costBurn": "45/50/55/60/65",
+               "tooltip": "Extends Jarvan IV's lance dealing {{ e1 }} <span class=\"colorFF8C00\">(+{{ f1 }})<\/span> physical damage and lowering the Armor of all enemies hit by {{ e2 }}% for 3 seconds.<br><br>If the lance contacts Demacian Standard it will pull Jarvan IV to its location, knocking up enemies in his path."
+            },
+            {
+               "range": [
+                  525,
+                  525,
+                  525,
+                  525,
+                  525
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e1 }} -> {{ e1NL }}",
+                     "{{ e3 }} -> {{ e3NL }}",
+                     "{{ e2 }}% -> {{ e2NL }}%",
+                     "{{ cooldown }} -> {{ cooldownnNL }}"
+                  ],
+                  "label": [
+                     "Shield Health",
+                     "Bonus Shield",
+                     "Slow Amount",
+                     "Cooldown"
+                  ]
+               },
+               "resource": "{{ cost }} Mana",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "50/90/130/170/210",
+                  "15/20/25/30/35",
+                  "20/30/40/50/60"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "JarvanIVGoldenAegis.png",
+                  "sprite": "spell4.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 48,
+                  "x": 0
+               },
+               "cooldown": [
+                  20,
+                  18,
+                  16,
+                  14,
+                  12
+               ],
+               "cost": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+               ],
+               "sanitizedDescription": "Jarvan IV calls upon the ancient kings of Demacia to shield him from harm and slow surrounding enemies.",
+               "rangeBurn": "525",
+               "costType": "Mana",
+               "effect": [
+                  null,
+                  [
+                     50,
+                     90,
+                     130,
+                     170,
+                     210
+                  ],
+                  [
+                     15,
+                     20,
+                     25,
+                     30,
+                     35
+                  ],
+                  [
+                     20,
+                     30,
+                     40,
+                     50,
+                     60
+                  ]
+               ],
+               "cooldownBurn": "20/18/16/14/12",
+               "description": "Jarvan IV calls upon the ancient kings of Demacia to shield him from harm and slow surrounding enemies.",
+               "name": "Golden Aegis",
+               "sanitizedTooltip": "Temporarily gains a shield that absorbs up to {{ e1 }} (+{{ e3 }} damage for each nearby enemy champion) damage for 5 seconds, and slows surrounding enemies by {{ e2 }}% for 2 seconds.",
+               "key": "JarvanIVGoldenAegis",
+               "costBurn": "30",
+               "tooltip": "Temporarily gains a shield that absorbs up to {{ e1 }} (+{{ e3 }} damage for each nearby enemy champion) damage for 5 seconds, and slows surrounding enemies by {{ e2 }}% for 2 seconds."
+            },
+            {
+               "range": [
+                  800,
+                  800,
+                  800,
+                  800,
+                  800
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e2 }} -> {{ e2NL }}",
+                     " {{ e1 }}% -> {{ e1NL }}%",
+                     "{{ e1 }}% -> {{ e1NL }}%",
+                     "{{ cooldown }} -> {{ cooldownnNL }}"
+                  ],
+                  "label": [
+                     "Damage",
+                     "Passive Attack Speed",
+                     "Active Attack Speed",
+                     "Cooldown"
+                  ]
+               },
+               "resource": "{{ cost }} Mana",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "10/13/16/19/22",
+                  "60/105/150/195/240",
+                  "10/13/16/19/22",
+                  "8"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "JarvanIVDemacianStandard.png",
+                  "sprite": "spell4.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 48,
+                  "x": 48
+               },
+               "cooldown": [
+                  13,
+                  12.5,
+                  12,
+                  11.5,
+                  11
+               ],
+               "cost": [
+                  55,
+                  55,
+                  55,
+                  55,
+                  55
+               ],
+               "vars": [{
+                  "link": "spelldamage",
+                  "coeff": [0.8],
+                  "key": "a1"
+               }],
+               "sanitizedDescription": "Jarvan IV carries the pride of Demacia, passively granting him bonus Attack Speed. Activating Demacian Standard allows Jarvan IV to place a Demacian flag that deals magic damage on impact and grants Attack Speed to nearby allied champions.",
+               "rangeBurn": "800",
+               "costType": "Mana",
+               "effect": [
+                  null,
+                  [
+                     10,
+                     13,
+                     16,
+                     19,
+                     22
+                  ],
+                  [
+                     60,
+                     105,
+                     150,
+                     195,
+                     240
+                  ],
+                  [
+                     10,
+                     13,
+                     16,
+                     19,
+                     22
+                  ],
+                  [
+                     8,
+                     8,
+                     8,
+                     8,
+                     8
+                  ]
+               ],
+               "cooldownBurn": "13/12.5/12/11.5/11",
+               "description": "Jarvan IV carries the pride of Demacia, passively granting him bonus Attack Speed. Activating Demacian Standard allows Jarvan IV to place a Demacian flag that deals magic damage on impact and grants Attack Speed to nearby allied champions.",
+               "name": "Demacian Standard",
+               "sanitizedTooltip": "Passive: Gains {{ e1 }}% Attack Speed. Active: Throws a Demacian Standard to a nearby area dealing {{ e2 }} (+{{ a1 }}) magic damage to enemies. The Standard lasts for {{ e4 }} seconds and grants surrounding allied champions {{ e1 }}% Attack Speed.",
+               "key": "JarvanIVDemacianStandard",
+               "costBurn": "55",
+               "tooltip": "<span class=\"colorFF9900\">Passive:<\/span> Gains {{ e1 }}% Attack Speed.<br><br><span class=\"colorFF9900\">Active:<\/span> Throws a Demacian Standard to a nearby area dealing {{ e2 }} <span class=\"color99FF99\">(+{{ a1 }})<\/span> magic damage to enemies. The Standard lasts for {{ e4 }} seconds and grants surrounding allied champions {{ e1 }}% Attack Speed."
+            },
+            {
+               "range": [
+                  650,
+                  650,
+                  650
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e1 }} -> {{ e1NL }}",
+                     "{{ cooldown }} -> {{ cooldownnNL }}",
+                     "{{ cost }} -> {{ costnNL }}"
+                  ],
+                  "label": [
+                     "Damage",
+                     "Cooldown",
+                     "Mana Cost"
+                  ]
+               },
+               "resource": "{{ cost }} Mana",
+               "maxrank": 3,
+               "effectBurn": [
+                  "",
+                  "200/325/450"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "JarvanIVCataclysm.png",
+                  "sprite": "spell4.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 48,
+                  "x": 96
+               },
+               "cooldown": [
+                  120,
+                  105,
+                  90
+               ],
+               "cost": [
+                  100,
+                  125,
+                  150
+               ],
+               "vars": [{
+                  "link": "bonusattackdamage",
+                  "coeff": [1.5],
+                  "key": "f1"
+               }],
+               "sanitizedDescription": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them.",
+               "rangeBurn": "650",
+               "costType": "Mana",
+               "effect": [
+                  null,
+                  [
+                     200,
+                     325,
+                     450
+                  ]
+               ],
+               "cooldownBurn": "120/105/90",
+               "description": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them.",
+               "name": "Cataclysm",
+               "sanitizedTooltip": "Heroically leaps to an enemy Champion dealing {{ e1 }} (+{{ f1 }}) physical damage and creating an arena of impassable terrain around them for 3.5 seconds. Activate again to collapse the terrain.",
+               "key": "JarvanIVCataclysm",
+               "costBurn": "100/125/150",
+               "tooltip": "Heroically leaps to an enemy Champion dealing {{ e1 }} <span class=\"colorFF8C00\">(+{{ f1 }})<\/span> physical damage and creating an arena of impassable terrain around them for 3.5 seconds.<br><br>Activate again to collapse the terrain."
+            }
+         ],
+         "blurb": "''There is only one truth, and you will find it at the point of my lance.''<br><br>As the royal family of Demacia for centuries, members of the Lightshield line have spent their lives waging war against any who opposed Demacian ethics. It is said that ...",
+         "allytips": [
+            "You can use the Dragon Strike / Demacian Standard combo to get out of your own Cataclysm arenas.",
+            "Split your basic attacks on different champions at the beginning of fights to maximize damage.",
+            "Use Demacian Standard as a scouting tool when worried about incoming enemies."
+         ],
+         "info": {
+            "defense": 8,
+            "magic": 3,
+            "difficulty": 5,
+            "attack": 6
+         },
+         "lore": "''There is only one truth, and you will find it at the point of my lance.''<br><br>As the royal family of Demacia for centuries, members of the Lightshield line have spent their lives waging war against any who opposed Demacian ethics. It is said that every Lightshield is born with anti-Noxian sentiment in his blood, and Jarvan IV is no exception.<br><br>As his forefathers had before him, he led Demacian troops into bloody engagements with Noxian forces, and on many occasions he has bled alongside wounded allies and fallen comrades. His most crushing defeat came at the hands of Jericho Swain, where he was outmaneuvered and captured by a Noxian battalion. This mistake nearly cost him his life at the hands of Urgot, but he was rescued by the Dauntless Vanguard, an elite Demacian strike force led by Jarvan's childhood companion, Garen.<br><br>Those close to him believed that his capture changed him. Xin Zhao was quoted as saying: ''His eyes never seemed to look at you, only through you to something he could not look away from.''<br><br>One day, without warning, Jarvan IV hand-picked a squad of Demacian soldiers and left Demacia, vowing to find ''atonement''. He began by tracking and hunting the most dangerous beasts and bandits he could find in northern Valoran, but he soon tired of such prey. Seeking something that only he understood, he ventured south of the Great Barrier. He wasn't heard from again for nearly two years.<br><br>After many had assumed the worst, he returned to glorious fanfare on the streets of Demacia. His Demacian plates were adorned with the bones and scales of creatures unknown. His eyes bore the wisdom of someone twice his age. Of the twelve soldiers who had departed with him, only two returned. In a tone as cold and steady as steel, he swore to bring the enemies of Demacia to their knees.",
+         "id": 59,
+         "title": "the Exemplar of Demacia",
+         "name": "Jarvan IV",
+         "passive": {
+            "sanitizedDescription": "Jarvan IV's initial basic attack on a target deals bonus physical damage. This effect cannot occur again on the same target for a short duration.",
+            "description": "Jarvan IV's initial basic attack on a target deals bonus physical damage. This effect cannot occur again on the same target for a short duration.",
+            "name": "Martial Cadence",
+            "image": {
+               "w": 48,
+               "full": "JarvanIV_MartialCadence.png",
+               "sprite": "passive1.png",
+               "group": "passive",
+               "h": 48,
+               "y": 0,
+               "x": 288
+            }
+         },
+         "partype": "Mana",
+         "key": "JarvanIV",
+         "skins": [
+            {
+               "id": 59000,
+               "num": 0,
+               "name": "default"
+            },
+            {
+               "id": 59001,
+               "num": 1,
+               "name": "Commando Jarvan IV"
+            },
+            {
+               "id": 59002,
+               "num": 2,
+               "name": "Dragonslayer Jarvan IV"
+            },
+            {
+               "id": 59003,
+               "num": 3,
+               "name": "Darkforge Jarvan IV"
+            },
+            {
+               "id": 59004,
+               "num": 4,
+               "name": "Victorious Jarvan IV"
+            },
+            {
+               "id": 59005,
+               "num": 5,
+               "name": "Warring Kingdoms Jarvan IV"
+            },
+            {
+               "id": 59006,
+               "num": 6,
+               "name": "Fnatic Jarvan IV"
+            }
+         ]
+      },
+      "Ezreal": {
+         "tags": [
+            "Marksman",
+            "Mage"
+         ],
+         "stats": {
+            "attackrange": 550,
+            "mpperlevel": 42,
+            "mp": 360.6,
+            "attackdamage": 55.66,
+            "hp": 484.4,
+            "hpperlevel": 80,
+            "attackdamageperlevel": 2.41,
+            "armor": 21.88,
+            "mpregenperlevel": 0.65,
+            "hpregen": 6.42,
+            "critperlevel": 0,
+            "spellblockperlevel": 0,
+            "mpregen": 8.09,
+            "attackspeedperlevel": 2.8,
+            "spellblock": 30,
+            "movespeed": 325,
+            "attackspeedoffset": 0,
+            "crit": 0,
+            "hpregenperlevel": 0.55,
+            "armorperlevel": 3.5
+         },
+         "enemytips": [
+            "Ezreal is a very fragile champion so take the fight to him.",
+            "Ezreal is completely skill shot based, so make sure to keep minions in between you.",
+            "Mystic Shot applies on-hit effects including the Crest of Cinders."
+         ],
+         "recommended": [
+            {
+               "champion": "Ezreal",
+               "title": "Beginner",
+               "map": "SR",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_starter"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_starter"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 1028,
+                           "count": 1
+                        },
+                        {
+                           "id": 1036,
+                           "count": 1
+                        },
+                        {
+                           "id": 3044,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_advanced"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 3006,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_movementspeed"
+                  },
+                  {
+                     "recMath": true,
+                     "items": [
+                        {
+                           "id": 3044,
+                           "count": 1
+                        },
+                        {
+                           "id": 3057,
+                           "count": 1
+                        },
+                        {
+                           "id": 3086,
+                           "count": 1
+                        },
+                        {
+                           "id": 3078,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_legendaryitem"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3133,
+                           "count": 1
+                        },
+                        {
+                           "id": 3508,
+                           "count": 1
+                        }
+                     ],
+                     "type": "beginner_morelegendaryitems"
+                  }
+               ],
+               "type": "riot",
+               "mode": "INTRO"
+            },
+            {
+               "champion": "Ezreal",
+               "title": "EzrealASC",
+               "map": "CS",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 1062,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 2
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3006,
+                           "count": 1
+                        },
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3181,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3035,
+                           "count": 1
+                        },
+                        {
+                           "id": 3104,
+                           "count": 1
+                        },
+                        {
+                           "id": 3046,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3026,
+                           "count": 1
+                        },
+                        {
+                           "id": 3137,
+                           "count": 1
+                        },
+                        {
+                           "id": 3184,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2004,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ASCENSION"
+            },
+            {
+               "champion": "Ezreal",
+               "title": "EzrealDM",
+               "map": "CS",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1001,
+                           "count": 1
+                        },
+                        {
+                           "id": 1062,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 3
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3158,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3508,
+                           "count": 1
+                        },
+                        {
+                           "id": 3181,
+                           "count": 1
+                        },
+                        {
+                           "id": 3036,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3026,
+                           "count": 1
+                        },
+                        {
+                           "id": 3137,
+                           "count": 1
+                        },
+                        {
+                           "id": 3184,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2047,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ODIN"
+            },
+            {
+               "champion": "Ezreal",
+               "title": "EzrealFIRSTBLOOD",
+               "map": "HA",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3044,
+                           "count": 1
+                        },
+                        {
+                           "id": 3057,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        }
+                     ],
+                     "type": "early"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3508,
+                           "count": 1
+                        },
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3158,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3072,
+                           "count": 1
+                        },
+                        {
+                           "id": 3031,
+                           "count": 1
+                        },
+                        {
+                           "id": 3087,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3036,
+                           "count": 1
+                        },
+                        {
+                           "id": 3026,
+                           "count": 1
+                        },
+                        {
+                           "id": 3102,
+                           "count": 1
+                        }
+                     ],
+                     "type": "situational"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2043,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        },
+                        {
+                           "id": 3363,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "FIRSTBLOOD"
+            },
+            {
+               "champion": "Ezreal",
+               "title": "EzrealSR",
+               "map": "SR",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 3340,
+                           "count": 1
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3044,
+                           "count": 1
+                        },
+                        {
+                           "id": 3057,
+                           "count": 1
+                        },
+                        {
+                           "id": 1001,
+                           "count": 1
+                        }
+                     ],
+                     "type": "early"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3508,
+                           "count": 1
+                        },
+                        {
+                           "id": 3158,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3036,
+                           "count": 1
+                        },
+                        {
+                           "id": 3072,
+                           "count": 1
+                        },
+                        {
+                           "id": 3031,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3004,
+                           "count": 1
+                        },
+                        {
+                           "id": 3025,
+                           "count": 1
+                        },
+                        {
+                           "id": 3153,
+                           "count": 1
+                        }
+                     ],
+                     "type": "situational"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2043,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        },
+                        {
+                           "id": 3363,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "CLASSIC"
+            },
+            {
+               "champion": "Ezreal",
+               "title": "EzrealTT",
+               "map": "TT",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 1055,
+                           "count": 1
+                        },
+                        {
+                           "id": 1036,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 1
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3006,
+                           "count": 1
+                        },
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3104,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3034,
+                           "count": 1
+                        },
+                        {
+                           "id": 3181,
+                           "count": 1
+                        },
+                        {
+                           "id": 3153,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3137,
+                           "count": 1
+                        },
+                        {
+                           "id": 3102,
+                           "count": 1
+                        },
+                        {
+                           "id": 3053,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2047,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "CLASSIC"
+            },
+            {
+               "champion": "Ezreal",
+               "title": "Map12",
+               "map": "HA",
+               "blocks": [
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3057,
+                           "count": 1
+                        },
+                        {
+                           "id": 2003,
+                           "count": 3
+                        }
+                     ],
+                     "type": "starting"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3006,
+                           "count": 1
+                        },
+                        {
+                           "id": 3078,
+                           "count": 1
+                        },
+                        {
+                           "id": 3508,
+                           "count": 1
+                        }
+                     ],
+                     "type": "essential"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3072,
+                           "count": 1
+                        },
+                        {
+                           "id": 3034,
+                           "count": 1
+                        },
+                        {
+                           "id": 3153,
+                           "count": 1
+                        }
+                     ],
+                     "type": "offensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 3139,
+                           "count": 1
+                        },
+                        {
+                           "id": 3102,
+                           "count": 1
+                        }
+                     ],
+                     "type": "defensive"
+                  },
+                  {
+                     "recMath": false,
+                     "items": [
+                        {
+                           "id": 2003,
+                           "count": 1
+                        },
+                        {
+                           "id": 2140,
+                           "count": 1
+                        }
+                     ],
+                     "type": "consumables"
+                  }
+               ],
+               "type": "riot",
+               "mode": "ARAM"
+            }
+         ],
+         "image": {
+            "w": 48,
+            "full": "Ezreal.png",
+            "sprite": "champion0.png",
+            "group": "champion",
+            "h": 48,
+            "y": 96,
+            "x": 96
+         },
+         "spells": [
+            {
+               "range": [
+                  1150,
+                  1150,
+                  1150,
+                  1150,
+                  1150
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e1 }} -> {{ e1NL }}",
+                     "{{ cooldown }} -> {{ cooldownnNL }}",
+                     "{{ cost }} -> {{ costnNL }}"
+                  ],
+                  "label": [
+                     "Bonus Damage",
+                     "Cooldown",
+                     "Mana Cost"
+                  ]
+               },
+               "resource": "{{ cost }} Mana",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "35/55/75/95/115",
+                  "1.5"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "EzrealMysticShot.png",
+                  "sprite": "spell2.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 144,
+                  "x": 0
+               },
+               "cooldown": [
+                  6.5,
+                  6,
+                  5.5,
+                  5,
+                  4.5
+               ],
+               "cost": [
+                  28,
+                  31,
+                  34,
+                  37,
+                  40
+               ],
+               "vars": [{
+                  "link": "spelldamage",
+                  "coeff": [0.4],
+                  "key": "a2"
+               }],
+               "sanitizedDescription": "Ezreal fires a damaging bolt of energy which reduces all of his cooldowns by 1.5 seconds if it strikes an enemy unit.",
+               "rangeBurn": "1150",
+               "costType": "Mana",
+               "effect": [
+                  null,
+                  [
+                     35,
+                     55,
+                     75,
+                     95,
+                     115
+                  ],
+                  [
+                     1.5,
+                     1.5,
+                     1.5,
+                     1.5,
+                     1.5
+                  ]
+               ],
+               "cooldownBurn": "6.5/6/5.5/5/4.5",
+               "description": "Ezreal fires a damaging bolt of energy which reduces all of his cooldowns by 1.5 seconds if it strikes an enemy unit.",
+               "name": "Mystic Shot",
+               "sanitizedTooltip": "Ezreal fires a bolt of energy, dealing {{ e1 }} (+{{ f3 }}) (+{{ a2 }}) physical damage (applies on-hit effects). Ezreal's cooldowns are reduced by {{ e2 }} seconds if Mystic Shot hits a target.",
+               "key": "EzrealMysticShot",
+               "costBurn": "28/31/34/37/40",
+               "tooltip": "Ezreal fires a bolt of energy, dealing {{ e1 }} <span class=\"colorFF8C00\">(+{{ f3 }})<\/span> <span class=\"color99FF99\">(+{{ a2 }})<\/span> physical damage (applies on-hit effects). <br><br>Ezreal's cooldowns are reduced by {{ e2 }} seconds if Mystic Shot hits a target."
+            },
+            {
+               "range": [
+                  1000,
+                  1000,
+                  1000,
+                  1000,
+                  1000
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e1 }} -> {{ e1NL }}",
+                     " {{ e2 }}% -> {{ e2NL }}%",
+                     " {{ cost }} -> {{ costnNL }}"
+                  ],
+                  "label": [
+                     "Damage",
+                     "Attack Speed % Increase",
+                     "Mana Cost"
+                  ]
+               },
+               "resource": "{{ cost }} Mana",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "70/115/160/205/250",
+                  "20/25/30/35/40"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "EzrealEssenceFlux.png",
+                  "sprite": "spell2.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 144,
+                  "x": 48
+               },
+               "cooldown": [
+                  9,
+                  9,
+                  9,
+                  9,
+                  9
+               ],
+               "cost": [
+                  50,
+                  60,
+                  70,
+                  80,
+                  90
+               ],
+               "vars": [{
+                  "link": "spelldamage",
+                  "coeff": [0.8],
+                  "key": "a1"
+               }],
+               "sanitizedDescription": "Ezreal fires a fluctuating wave of energy, dealing magic damage to enemy champions, while increasing the Attack Speed of allied champions.",
+               "rangeBurn": "1000",
+               "costType": "Mana",
+               "effect": [
+                  null,
+                  [
+                     70,
+                     115,
+                     160,
+                     205,
+                     250
+                  ],
+                  [
+                     20,
+                     25,
+                     30,
+                     35,
+                     40
+                  ]
+               ],
+               "cooldownBurn": "9",
+               "description": "Ezreal fires a fluctuating wave of energy, dealing magic damage to enemy champions, while increasing the Attack Speed of allied champions.",
+               "name": "Essence Flux",
+               "sanitizedTooltip": "Ezreal fires a wave of energy that damages all enemy champions it passes through for {{ e1 }} (+{{ a1 }}) magic damage. If Ezreal or his Allied champions are hit by the wave, their Attack Speed is increased by {{ e2 }}% for 5 seconds.",
+               "key": "EzrealEssenceFlux",
+               "costBurn": "50/60/70/80/90",
+               "tooltip": "Ezreal fires a wave of energy that damages all enemy champions it passes through for {{ e1 }} <span class=\"color99FF99\">(+{{ a1 }})<\/span> magic damage. If Ezreal or his Allied champions are hit by the wave, their Attack Speed is increased by {{ e2 }}% for 5 seconds."
+            },
+            {
+               "range": [
+                  475,
+                  475,
+                  475,
+                  475,
+                  475
+               ],
+               "leveltip": {
+                  "effect": [
+                     "{{ e1 }} -> {{ e1NL }}",
+                     " {{ cooldown }} -> {{ cooldownnNL }}"
+                  ],
+                  "label": [
+                     "Damage",
+                     "Cooldown"
+                  ]
+               },
+               "resource": "{{ cost }} Mana",
+               "maxrank": 5,
+               "effectBurn": [
+                  "",
+                  "75/125/175/225/275"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "EzrealArcaneShift.png",
+                  "sprite": "spell2.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 144,
+                  "x": 96
+               },
+               "cooldown": [
+                  19,
+                  17.5,
+                  16,
+                  14.5,
+                  13
+               ],
+               "cost": [
+                  90,
+                  90,
+                  90,
+                  90,
+                  90
+               ],
+               "vars": [{
+                  "link": "spelldamage",
+                  "coeff": [0.75],
+                  "key": "a1"
+               }],
+               "sanitizedDescription": "Ezreal teleports to a target nearby location and fires a homing bolt which strikes the nearest enemy unit.",
+               "rangeBurn": "475",
+               "costType": "Mana",
+               "effect": [
+                  null,
+                  [
+                     75,
+                     125,
+                     175,
+                     225,
+                     275
+                  ]
+               ],
+               "cooldownBurn": "19/17.5/16/14.5/13",
+               "description": "Ezreal teleports to a target nearby location and fires a homing bolt which strikes the nearest enemy unit.",
+               "name": "Arcane Shift",
+               "sanitizedTooltip": "Ezreal teleports to a target nearby location and fires a homing bolt at the nearest enemy unit, dealing {{ e1 }} (+{{ f1 }}) (+{{ a1 }}) magic damage.",
+               "key": "EzrealArcaneShift",
+               "costBurn": "90",
+               "tooltip": "Ezreal teleports to a target nearby location and fires a homing bolt at the nearest enemy unit, dealing {{ e1 }} <span class=\"colorFF8C00\">(+{{ f1 }})<\/span> <span class=\"color99FF99\">(+{{ a1 }})<\/span> magic damage."
+            },
+            {
+               "range": [
+                  20000,
+                  20000,
+                  20000
+               ],
+               "leveltip": {
+                  "effect": [" {{ e1 }} -> {{ e1NL }}"],
+                  "label": ["Damage"]
+               },
+               "resource": "{{ cost }} Mana",
+               "maxrank": 3,
+               "effectBurn": [
+                  "",
+                  "350/500/650",
+                  "10",
+                  "30"
+               ],
+               "image": {
+                  "w": 48,
+                  "full": "EzrealTrueshotBarrage.png",
+                  "sprite": "spell2.png",
+                  "group": "spell",
+                  "h": 48,
+                  "y": 144,
+                  "x": 144
+               },
+               "cooldown": [
+                  80,
+                  80,
+                  80
+               ],
+               "cost": [
+                  100,
+                  100,
+                  100
+               ],
+               "vars": [
+                  {
+                     "link": "bonusattackdamage",
+                     "coeff": [1],
+                     "key": "f1"
+                  },
+                  {
+                     "link": "spelldamage",
+                     "coeff": [0.9],
+                     "key": "a1"
+                  }
+               ],
+               "sanitizedDescription": "Ezreal winds up for 1 second to fire a powerful barrage of energy missiles which do massive damage to each unit they pass through (deals 10% less damage to each unit it passes through).",
+               "rangeBurn": "20000",
+               "costType": "Mana",
+               "effect": [
+                  null,
+                  [
+                     350,
+                     500,
+                     650
+                  ],
+                  [
+                     10,
+                     10,
+                     10
+                  ],
+                  [
+                     30,
+                     30,
+                     30
+                  ]
+               ],
+               "cooldownBurn": "80",
+               "description": "Ezreal winds up for 1 second to fire a powerful barrage of energy missiles which do massive damage to each unit they pass through (deals 10% less damage to each unit it passes through).",
+               "name": "Trueshot Barrage",
+               "sanitizedTooltip": "Ezreal winds up for 1 second to fire a barrage of missiles dealing {{ e1 }} (+{{ f1 }}) (+{{ a1 }}) magic damage to each unit it passes through. However, it deals {{ e2 }}% less damage for each unit it hits (minimum {{ e3 }}%).",
+               "key": "EzrealTrueshotBarrage",
+               "costBurn": "100",
+               "tooltip": "Ezreal winds up for 1 second to fire a barrage of missiles dealing {{ e1 }} <span class=\"colorFF8C00\">(+{{ f1 }})<\/span> <span class=\"color99FF99\">(+{{ a1 }})<\/span> magic damage to each unit it passes through. However, it deals {{ e2 }}% less damage for each unit it hits (minimum {{ e3 }}%)."
+            }
+         ],
+         "blurb": "The intrepid young adventurer Ezreal has explored some of the most remote and abandoned locations on Runeterra. During an expedition to the buried ruins of ancient Shurima, he recovered an amulet of incredible mystical power. Likely constructed to be ...",
+         "allytips": [
+            "Use Arcane Shift to help line up your other skill shots.",
+            "You can play Ezreal either as a Attack Damage carry or Ability Power carry depending on how you build him.",
+            "You can line up Trueshot Barrage to hit multiple minion waves or even Monsters."
+         ],
+         "info": {
+            "defense": 2,
+            "magic": 6,
+            "difficulty": 7,
+            "attack": 7
+         },
+         "lore": "The intrepid young adventurer Ezreal has explored some of the most remote and abandoned locations on Runeterra. During an expedition to the buried ruins of ancient Shurima, he recovered an amulet of incredible mystical power. Likely constructed to be worn by one of the Ascended, the enormous talisman nonetheless fit snugly upon his arm, amplifying his raw sorcerous skill to such an extent that he's gained the reputation of a hero, much to his embarrassment.",
+         "id": 81,
+         "title": "the Prodigal Explorer",
+         "name": "Ezreal",
+         "passive": {
+            "sanitizedDescription": "Hitting a target with any of Ezreal's abilities increases his Attack Speed by 10% for 6 seconds (effect stacks up to 5 times).",
+            "description": "Hitting a target with any of Ezreal's abilities increases his Attack Speed by 10% for 6 seconds (effect stacks up to 5 times).",
+            "name": "Rising Spell Force",
+            "image": {
+               "w": 48,
+               "full": "Ezreal_RisingSpellForce.png",
+               "sprite": "passive0.png",
+               "group": "passive",
+               "h": 48,
+               "y": 96,
+               "x": 96
+            }
+         },
+         "partype": "Mana",
+         "key": "Ezreal",
+         "skins": [
+            {
+               "id": 81000,
+               "num": 0,
+               "name": "default"
+            },
+            {
+               "id": 81001,
+               "num": 1,
+               "name": "Nottingham Ezreal"
+            },
+            {
+               "id": 81002,
+               "num": 2,
+               "name": "Striker Ezreal"
+            },
+            {
+               "id": 81003,
+               "num": 3,
+               "name": "Frosted Ezreal"
+            },
+            {
+               "id": 81004,
+               "num": 4,
+               "name": "Explorer Ezreal"
+            },
+            {
+               "id": 81005,
+               "num": 5,
+               "name": "Pulsefire Ezreal"
+            },
+            {
+               "id": 81006,
+               "num": 6,
+               "name": "TPA Ezreal"
+            },
+            {
+               "id": 81007,
+               "num": 7,
+               "name": "Debonair Ezreal"
+            },
+            {
+               "id": 81008,
+               "num": 8,
+               "name": "Ace of Spades Ezreal"
+            }
+         ]
+      }
+   },
+   "format": "full",
+   "type": "champion",
+   "version": "6.2.1"
+}

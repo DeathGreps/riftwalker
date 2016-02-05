@@ -1,0 +1,15 @@
+<h2>The Maps:</h2>
+<form>
+  <label *ngFor="#leagueMap of leagueMaps">
+    <input
+      type="radio"
+      name="mapRadio"
+      (click)="onSelect(leagueMap)"
+      value="{{leagueMap.shortName}}">
+      Label: {{leagueMap.label}} ShortName: {{leagueMap.shortName}}
+      <br />
+</label>
+</form>
+<div *ngIf="selectedLeagueMap">
+  selectedLeagueMap = { label: {{selectedLeagueMap.label}}, ShortName: {{selectedLeagueMap.shortName}} }
+</div>

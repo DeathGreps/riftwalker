@@ -1,0 +1,15 @@
+<h2>The Game Modes:</h2>
+<form>
+  <label *ngFor="#gameMode of gameModes">
+    <input
+      type="radio"
+      name="gameModeRadio"
+      (click)="onSelect(gameMode)"
+      value="{{gameMode.mode}}">
+      Label: {{gameMode.label}} Mode: {{gameMode.mode}}
+      <br />
+  </label>
+</form>
+<div *ngIf="selectedGameMode">
+  selectedGameMode = { label: {{selectedGameMode.label}}, mode: {{selectedGameMode.mode}} }
+</div>
