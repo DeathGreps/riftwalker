@@ -1,0 +1,58 @@
+h2 champion selector
+p selected region in champion: {{selectedRegion}} <br />
+  select(name='championSelect' ng-if="championData" id='championSelect' ng-options='v as v for (k, v) in championKeys' ng-change='changedChampionSelection(selectedChampion)' ng-model='selectedChampion')
+  h2 Name: {{selectedChampionData.name}}
+  
+  h4 {{(selectedChampionData.title.charAt(0).toUpperCase() + selectedChampionData.title.slice(1)) }}
+  img(ng-if='selectedChampionData.image.full' ng-src='{{getChampionImage(selectedChampionData.image.full)}}')
+  form(name="championForm")
+    input(type="number" name="championLevel" ng-model="championLevel" placeholder="Enter a level" min="1" max="18")
+    span(ng-show="championForm.championLevel.$error.integer") The value is not a valid integer!
+    span(ng-show="championForm.championLevel.$error.min || championForm.championLevel.$error.max") lol pls. this level isn't 1-18 :(
+    
+  table(border="1") Stats
+    tr
+      td Health
+      td {{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}
+      td Health/Level
+      td {{selectedChampionData.stats.hpperlevel}}
+    tr
+      td Health Regen
+      td {{selectedChampionData.stats.hpregen}}
+      td Health Regen/Level
+      td {{selectedChampionData.stats.hpregenperlevel}}
+    tr
+      td Armor 
+      td {{selectedChampionData.stats.armor}}
+      td Magic Resistance
+      td {{selectedChampionData.stats.spellblock}}
+    tr
+      td Armor/Level
+      td {{selectedChampionData.stats.armorperlevel}}
+      td Magic Resistance/Level
+      td {{selectedChampionData.stats.spellblockperlevel}}
+    tr
+      td Attack Damage
+      td {{selectedChampionData.stats.attackdamage}}
+      td Mana
+      td {{selectedChampionData.stats.mp}}
+    tr
+      td Attack Damage/Level
+      td {{selectedChampionData.stats.attackdamageperlevel}}
+      td Mana/Level
+      td {{selectedChampionData.stats.mpperlevel}}
+    tr
+      td Attack Range
+      td {{selectedChampionData.stats.attackrange}}
+      td Mana Regen
+      td {{selectedChampionData.stats.mpregen}}
+    tr
+      td Attack Speed Offset
+      td {{selectedChampionData.stats.attackspeedoffset}}
+      td Mana Regen/Level
+      td {{selectedChampionData.stats.mpregenperlevel}}
+    tr
+      td Attack Speed/Level
+      td {{selectedChampionData.stats.attackspeedperlevel}}
+      td Movement Speed
+      td {{selectedChampionData.stats.movespeed}}

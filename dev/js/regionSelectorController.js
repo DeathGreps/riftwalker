@@ -1,7 +1,7 @@
 var app = angular.module('riftwalkerApp');
 
 app.controller('RegionSelectorController', ['DataService', '$scope', function (DataService, $scope) {
-    
+
 
 
     var regions = [
@@ -24,5 +24,11 @@ app.controller('RegionSelectorController', ['DataService', '$scope', function (D
 
     $scope.$watch('selectedRegion', function (newValue, oldValue) {
         if (newValue !== oldValue) DataService.setRegion(newValue);
-    });    
-}]);
+    });
+}])
+.directive('regionSelector', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'region.html'
+  }
+});

@@ -40,4 +40,11 @@ app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http',
     $scope.championKeys = '';
     $scope.selectedChampion = '';
     $scope.selectedChampionData = {};
-}]);
+    $scope.championLevel = 1;
+}])
+.directive('championSelector', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'champion.html'
+  }
+});

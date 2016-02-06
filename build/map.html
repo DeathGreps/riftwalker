@@ -1,0 +1,13 @@
+
+<h2>map selector</h2>
+<p id="mapLabel">Select a map {{selectedMap}}:</p>
+<select name="mapSelect" id="mapSelect" ng-options="m as m.label for m in maps" ng-model="selectedMap"></select>
+<p>Item Set Type: {{ itemSetType }}</p>
+<p>Custom
+  <input type="radio" ng-model="itemSetType" ng-value="itemSetTypes[0]"/>
+</p>
+<p>Global
+  <input type="radio" ng-model="itemSetType" ng-value="itemSetTypes[1]"/>
+</p>
+<select name="modeSelect" id="modeSelect" ng-options="mo as mo.label for mo in gameModes" ng-model="selectedGameMode"></select>
+<p>Game Mode: {{ selectedGameMode }}</p>

@@ -1,0 +1,11 @@
+h2 map selector
+p(id='mapLabel') Select a map {{selectedMap}}:
+select(name='mapSelect' id='mapSelect' ng-options='m as m.label for m in maps' ng-model='selectedMap')
+p Item Set Type: {{ itemSetType }}
+p Custom
+    input(type='radio' ng-model='itemSetType' ng-value='itemSetTypes[0]')
+p Global
+    input(type='radio' ng-model='itemSetType' ng-value='itemSetTypes[1]')
+
+select(name='modeSelect' id='modeSelect' ng-options='mo as mo.label for mo in gameModes' ng-model='selectedGameMode')
+p Game Mode: {{ selectedGameMode }}

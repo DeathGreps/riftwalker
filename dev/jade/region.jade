@@ -1,0 +1,4 @@
+h2 region selector
+p(id='regionLabel') Current region:
+select(name='regionSelect' id='regionSelect' ng-options='reg as reg.region for reg in regions' ng-model='selectedRegion')
+p {{selectedRegion}}

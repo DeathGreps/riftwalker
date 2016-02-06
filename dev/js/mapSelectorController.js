@@ -26,7 +26,7 @@ app.controller('MapSelectorController', ['$scope', function( $scope ) {
     blocks = [
         {
             type: "The title of the block",
-            recMath: false, // 
+            recMath: false, //
             minSummonerLevel: -1,
             maxSummonerLevel: -1,
             items: [
@@ -38,4 +38,10 @@ app.controller('MapSelectorController', ['$scope', function( $scope ) {
         }
     ];
 
-}]);
+}])
+.directive('mapSelector', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'map.html'
+  }
+});

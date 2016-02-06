@@ -8,82 +8,8 @@ block body
     #pageContent(ng-app='riftwalkerApp')
         #pageTitle Riftwalker
         
-        #regionBox(ng-controller='RegionSelectorController')
-            p(id='regionLabel') Current region:
-            select(name='regionSelect' id='regionSelect' ng-options='reg as reg.region for reg in regions' ng-model='selectedRegion')
-            p {{selectedRegion}}
-
-        #mapBox(ng-controller='MapSelectorController')
-            p(id='mapLabel') Select a map {{selectedMap}}:
-            select(name='mapSelect' id='mapSelect' ng-options='m as m.label for m in maps' ng-model='selectedMap')
-            p Item Set Type: {{ itemSetType }}
-            p Custom
-            input(type='radio' ng-model='itemSetType' ng-value='itemSetTypes[0]')
-            p Global
-            input(type='radio' ng-model='itemSetType' ng-value='itemSetTypes[1]')
-            
-            select(name='modeSelect' id='modeSelect' ng-options='mo as mo.label for mo in gameModes' ng-model='selectedGameMode')
-            p Game Mode: {{ selectedGameMode }}
-            
-        #selectedChampionInformation(ng-controller='ChampionSelectorController' )
-            p selected region in champion: {{selectedRegion}}
-            select(name='championSelect' ng-if="championData" id='championSelect' ng-options='v as v for (k, v) in championKeys' ng-change='changedChampionSelection(selectedChampion)' ng-model='selectedChampion')
-            h2 Name: {{selectedChampionData.name}}
-            //- h2 key: {{selectedChampionData.key}}
-            h4 {{selectedChampionData.title}}
-            img(ng-if='selectedChampionData.image.full' ng-src='{{getChampionImage(selectedChampionData.image.full)}}')
-
-            table(border="1") Stats
-              tr
-                td Health
-                td {{selectedChampionData.stats.hp}}
-                td Health/Level
-                td {{selectedChampionData.stats.hpperlevel}}
-              tr
-                td Health Regen
-                td {{selectedChampionData.stats.hpregen}}
-                td Health Regen/Level
-                td {{selectedChampionData.stats.hpregenperlevel}}
-              tr
-                td Armor 
-                td {{selectedChampionData.stats.armor}}
-                td Magic Resistance
-                td {{selectedChampionData.stats.spellblock}}
-              tr
-                td Armor/Level
-                td {{selectedChampionData.stats.armorperlevel}}
-                td Magic Resistance/Level
-                td {{selectedChampionData.stats.spellblockperlevel}}
-              tr
-                td Attack Damage
-                td {{selectedChampionData.stats.attackdamage}}
-                td Mana
-                td {{selectedChampionData.stats.mp}}
-              tr
-                td Attack Damage/Level
-                td {{selectedChampionData.stats.attackdamageperlevel}}
-                td Mana/Level
-                td {{selectedChampionData.stats.mpperlevel}}
-              tr
-                td Attack Range
-                td {{selectedChampionData.stats.attackrange}}
-                td Mana Regen
-                td {{selectedChampionData.stats.mpregen}}
-              tr
-                td Attack Speed Offset
-                td {{selectedChampionData.stats.attackspeedoffset}}
-                td Mana Regen/Level
-                td {{selectedChampionData.stats.mpregenperlevel}}
-              tr
-                td Attack Speed/Level
-                td {{selectedChampionData.stats.attackspeedperlevel}}
-                td Movement Speed
-                td {{selectedChampionData.stats.movespeed}}
-              
-
-                    
-                  
-            
-            //- h3 {{selectedChampionData.enemytips}}
-            //- h3 {{selectedChampionData.blurb}}
-            //- p {{selectedChampionData.lore}}
+        region-selector(ng-controller='RegionSelectorController')
+        
+        map-selector(ng-controller='MapSelectorController')
+        
+        champion-selector(ng-controller='ChampionSelectorController')

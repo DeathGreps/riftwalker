@@ -1,0 +1,66 @@
+
+<h2>champion selector</h2>
+<p>selected region in champion: {{selectedRegion}} <br />
+  <select name="championSelect" ng-if="championData" id="championSelect" ng-options="v as v for (k, v) in championKeys" ng-change="changedChampionSelection(selectedChampion)" ng-model="selectedChampion"></select>
+  <h2>Name: {{selectedChampionData.name}}</h2>
+  <h4>{{(selectedChampionData.title.charAt(0).toUpperCase() + selectedChampionData.title.slice(1)) }}</h4><img ng-if="selectedChampionData.image.full" ng-src="{{getChampionImage(selectedChampionData.image.full)}}"/>
+  <form name="championForm">
+    <input type="number" name="championLevel" ng-model="championLevel" placeholder="Enter a level" min="1" max="18"/><span ng-show="championForm.championLevel.$error.integer">The value is not a valid integer!</span><span ng-show="championForm.championLevel.$error.min || championForm.championLevel.$error.max">lol pls. this level isn't 1-18 :(</span>
+  </form>
+  <table border="1">Stats
+    <tr>
+      <td>Health</td>
+      <td>{{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}</td>
+      <td>Health/Level</td>
+      <td>{{selectedChampionData.stats.hpperlevel}}</td>
+    </tr>
+    <tr>
+      <td>Health Regen</td>
+      <td>{{selectedChampionData.stats.hpregen}}</td>
+      <td>Health Regen/Level</td>
+      <td>{{selectedChampionData.stats.hpregenperlevel}}</td>
+    </tr>
+    <tr>
+      <td>Armor </td>
+      <td>{{selectedChampionData.stats.armor}}</td>
+      <td>Magic Resistance</td>
+      <td>{{selectedChampionData.stats.spellblock}}</td>
+    </tr>
+    <tr>
+      <td>Armor/Level</td>
+      <td>{{selectedChampionData.stats.armorperlevel}}</td>
+      <td>Magic Resistance/Level</td>
+      <td>{{selectedChampionData.stats.spellblockperlevel}}</td>
+    </tr>
+    <tr>
+      <td>Attack Damage</td>
+      <td>{{selectedChampionData.stats.attackdamage}}</td>
+      <td>Mana</td>
+      <td>{{selectedChampionData.stats.mp}}</td>
+    </tr>
+    <tr>
+      <td>Attack Damage/Level</td>
+      <td>{{selectedChampionData.stats.attackdamageperlevel}}</td>
+      <td>Mana/Level</td>
+      <td>{{selectedChampionData.stats.mpperlevel}}</td>
+    </tr>
+    <tr>
+      <td>Attack Range</td>
+      <td>{{selectedChampionData.stats.attackrange}}</td>
+      <td>Mana Regen</td>
+      <td>{{selectedChampionData.stats.mpregen}}</td>
+    </tr>
+    <tr>
+      <td>Attack Speed Offset</td>
+      <td>{{selectedChampionData.stats.attackspeedoffset}}</td>
+      <td>Mana Regen/Level</td>
+      <td>{{selectedChampionData.stats.mpregenperlevel}}</td>
+    </tr>
+    <tr>
+      <td>Attack Speed/Level</td>
+      <td>{{selectedChampionData.stats.attackspeedperlevel}}</td>
+      <td>Movement Speed</td>
+      <td>{{selectedChampionData.stats.movespeed}}</td>
+    </tr>
+  </table>
+</p>
