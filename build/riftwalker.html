@@ -17,28 +17,78 @@
         <select name="regionSelect" id="regionSelect" ng-options="reg as reg.region for reg in regions" ng-model="selectedRegion"></select>
         <p>{{selectedRegion}}</p>
       </div>
-      <div id="selectedChampionInformation" ng-controller="ChampionSelectorController">
-        <p>selected region in champion: {{selectedRegion}}</p>
-        <select name="championSelect" id="championSelect" ng-options="v as v for (k, v) in championKeys" ng-change="changedChampionSelection(selectedChampion)" ng-model="selectedChampion"></select>
-        <h2>{{selectedChampionData.name}}</h2>
-        <h2>{{selectedChampionData.key}}</h2>
-        <h3>{{selectedChampionData.title}}</h3><img ng-if="selectedChampionData.image.full" ng-src="{{getChampionImage(selectedChampionData.image.full)}}">
-        <h3>{{selectedChampionData.enemytyps}}</h3>
-        <h3>{{selectedChampionData.blurb}}</h3>
-        <p>{{selectedChampionData.lore}}</p>
-      </div>
       <div id="mapBox" ng-controller="MapSelectorController">
         <p id="mapLabel">Select a map {{selectedMap}}:</p>
         <select name="mapSelect" id="mapSelect" ng-options="m as m.label for m in maps" ng-model="selectedMap"></select>
         <p>Item Set Type: {{ itemSetType }}</p>
-        <p>Custom
-          <input type="radio" ng-model="itemSetType" ng-value="itemSetTypes[0]">
-        </p>
-        <p>Global
-          <input type="radio" ng-model="itemSetType" ng-value="itemSetTypes[1]">
-        </p>
+        <p>Custom</p>
+        <input type="radio" ng-model="itemSetType" ng-value="itemSetTypes[0]">
+        <p>Global</p>
+        <input type="radio" ng-model="itemSetType" ng-value="itemSetTypes[1]">
         <select name="modeSelect" id="modeSelect" ng-options="mo as mo.label for mo in gameModes" ng-model="selectedGameMode"></select>
         <p>Game Mode: {{ selectedGameMode }}</p>
+      </div>
+      <div id="selectedChampionInformation" ng-controller="ChampionSelectorController">
+        <p>selected region in champion: {{selectedRegion}}</p>
+        <select name="championSelect" ng-if="championData" id="championSelect" ng-options="v as v for (k, v) in championKeys" ng-change="changedChampionSelection(selectedChampion)" ng-model="selectedChampion"></select>
+        <h2>Name: {{selectedChampionData.name}}</h2>
+        <h4>{{selectedChampionData.title}}</h4><img ng-if="selectedChampionData.image.full" ng-src="{{getChampionImage(selectedChampionData.image.full)}}">
+        <table border="1">Stats
+          <tr>
+            <td>Health</td>
+            <td>{{selectedChampionData.stats.hp}}</td>
+            <td>Health/Level</td>
+            <td>{{selectedChampionData.stats.hpperlevel}}</td>
+          </tr>
+          <tr>
+            <td>Health Regen</td>
+            <td>{{selectedChampionData.stats.hpregen}}</td>
+            <td>Health Regen/Level</td>
+            <td>{{selectedChampionData.stats.hpregenperlevel}}</td>
+          </tr>
+          <tr>
+            <td>Armor </td>
+            <td>{{selectedChampionData.stats.armor}}</td>
+            <td>Magic Resistance</td>
+            <td>{{selectedChampionData.stats.spellblock}}</td>
+          </tr>
+          <tr>
+            <td>Armor/Level</td>
+            <td>{{selectedChampionData.stats.armorperlevel}}</td>
+            <td>Magic Resistance/Level</td>
+            <td>{{selectedChampionData.stats.spellblockperlevel}}</td>
+          </tr>
+          <tr>
+            <td>Attack Damage</td>
+            <td>{{selectedChampionData.stats.attackdamage}}</td>
+            <td>Mana</td>
+            <td>{{selectedChampionData.stats.mp}}</td>
+          </tr>
+          <tr>
+            <td>Attack Damage/Level</td>
+            <td>{{selectedChampionData.stats.attackdamageperlevel}}</td>
+            <td>Mana/Level</td>
+            <td>{{selectedChampionData.stats.mpperlevel}}</td>
+          </tr>
+          <tr>
+            <td>Attack Range</td>
+            <td>{{selectedChampionData.stats.attackrange}}</td>
+            <td>Mana Regen</td>
+            <td>{{selectedChampionData.stats.mpregen}}</td>
+          </tr>
+          <tr>
+            <td>Attack Speed Offset</td>
+            <td>{{selectedChampionData.stats.attackspeedoffset}}</td>
+            <td>Mana Regen/Level</td>
+            <td>{{selectedChampionData.stats.mpregenperlevel}}</td>
+          </tr>
+          <tr>
+            <td>Attack Speed/Level</td>
+            <td>{{selectedChampionData.stats.attackspeedperlevel}}</td>
+            <td>Movement Speed</td>
+            <td>{{selectedChampionData.stats.movespeed}}</td>
+          </tr>
+        </table>
       </div>
     </div>
     <script src="js/angular.js"></script>

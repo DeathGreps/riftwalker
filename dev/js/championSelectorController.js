@@ -10,13 +10,14 @@ app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http',
         }
     );
 
-
     var getChampionData = function(selRegion) {
         $http({
             method: 'GET',
-            url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region
+            dataType: 'jsonp',
+            // url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region
+            url: 'https://global.api.pvp.net/api/lol/static-data/' + DataService.getRegion().region.toLowerCase() + '/v1.2/champion?champData=all&api_key=8154a173-96ac-4d43-9c36-7cbc0caff087'
         }).then(function successCallback(response) {
-            
+
             $scope.championData = response.data;
             $scope.championKeys = response.data.keys;
 
@@ -26,7 +27,7 @@ app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http',
     };
 
     $scope.changedChampionSelection = function(championName) {
-        $scope.selectedChampionData = $scope.championData.data[championName];  
+        $scope.selectedChampionData = $scope.championData.data[championName];
     };
 
     $scope.getChampionImage = function(imageFullName) {
