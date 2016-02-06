@@ -5,8 +5,8 @@ import {LeagueMapsComponent} from './league-maps/league-maps.component';
 import {GameModesComponent} from './game-modes/game-modes.component';
 import {RegionsComponent} from './regions/regions.component';
 
-import {ChampionListComponent} from './champions/champion-list.component';
-import {ChampionService} from './shared/champion.service';
+// import {ChampionListComponent} from './champions/champion-list.component';
+// import {ChampionService} from './shared/champion.service';
 
 @Component({
   selector: 'riftwalker',
@@ -20,10 +20,10 @@ import {ChampionService} from './shared/champion.service';
   <regions></regions>
   <champion-list></champion-list>
   `,
-  directives: [LeagueMapsComponent, GameModesComponent, RegionsComponent, ChampionListComponent],
+  directives: [LeagueMapsComponent, GameModesComponent, RegionsComponent],
   providers: [
   //  HTTP_PROVIDERS,
-    ChampionService
+    // ChampionService
   ]
 })
 export class AppComponent implements OnInit {
