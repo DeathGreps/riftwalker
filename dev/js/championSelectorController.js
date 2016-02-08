@@ -32,11 +32,11 @@ app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http',
     };
 
     $scope.getChampionImage = function(imageFullName) {
-        return "http://ddragon.leagueoflegends.com/cdn/5.24.2/img/champion/" + imageFullName;
+        return $scope.championImageUrl + imageFullName;
     };
 
     $scope.selectedRegion = DataService.getRegion();
-    $scope.championImageUrl = "http://ddragon.leagueoflegends.com/cdn/5.24.2/img/champion/"
+    $scope.championImageUrl = "http://ddragon.leagueoflegends.com/cdn/6.2.1/img/champion/"
     $scope.championData = getChampionData();
     $scope.championKeys = '';
     $scope.selectedChampion = '';
