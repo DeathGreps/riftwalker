@@ -16,49 +16,49 @@
     </tr>
     <tr>
       <td>Health Regen</td>
-      <td>{{selectedChampionData.stats.hpregen}}</td>
+      <td>{{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}</td>
       <td>Health Regen/Level</td>
       <td>{{selectedChampionData.stats.hpregenperlevel}}</td>
     </tr>
     <tr>
       <td>Armor </td>
-      <td>{{selectedChampionData.stats.armor}}</td>
-      <td>Magic Resistance</td>
-      <td>{{selectedChampionData.stats.spellblock}}</td>
-    </tr>
-    <tr>
+      <td>{{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}</td>
       <td>Armor/Level</td>
       <td>{{selectedChampionData.stats.armorperlevel}}</td>
+    </tr>
+    <tr>
+      <td>Magic Resistance</td>
+      <td>{{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}</td>
       <td>Magic Resistance/Level</td>
       <td>{{selectedChampionData.stats.spellblockperlevel}}</td>
     </tr>
     <tr>
       <td>Attack Damage</td>
-      <td>{{selectedChampionData.stats.attackdamage}}</td>
-      <td>Mana</td>
-      <td>{{selectedChampionData.stats.mp}}</td>
-    </tr>
-    <tr>
+      <td>{{selectedChampionData.stats.attackdamage + ((championLevel-1) * selectedChampionData.stats.attackdamageperlevel) | number: 1}}</td>
       <td>Attack Damage/Level</td>
       <td>{{selectedChampionData.stats.attackdamageperlevel}}</td>
+    </tr>
+    <tr>
+      <td>Mana</td>
+      <td>{{selectedChampionData.stats.mp + ((championLevel-1) * selectedChampionData.stats.mpperlevel) | number: 1}}</td>
       <td>Mana/Level</td>
       <td>{{selectedChampionData.stats.mpperlevel}}</td>
     </tr>
     <tr>
-      <td>Attack Range</td>
-      <td>{{selectedChampionData.stats.attackrange}}</td>
       <td>Mana Regen</td>
-      <td>{{selectedChampionData.stats.mpregen}}</td>
-    </tr>
-    <tr>
-      <td>Attack Speed Offset</td>
-      <td>{{selectedChampionData.stats.attackspeedoffset}}</td>
+      <td>{{selectedChampionData.stats.mpregen + ((championLevel-1) * selectedChampionData.stats.mpregenperlevel) | number: 1}}</td>
       <td>Mana Regen/Level</td>
       <td>{{selectedChampionData.stats.mpregenperlevel}}</td>
     </tr>
     <tr>
+      <td>Attack Speed Offset</td>
+      <td>{{selectedChampionData.stats.attackspeedoffset + ((championLevel-1) * selectedChampionData.stats.attackspeedperlevel) | number: 2}}</td>
       <td>Attack Speed/Level</td>
       <td>{{selectedChampionData.stats.attackspeedperlevel}}</td>
+    </tr>
+    <tr>
+      <td>Attack Range</td>
+      <td>{{selectedChampionData.stats.attackrange}}</td>
       <td>Movement Speed</td>
       <td>{{selectedChampionData.stats.movespeed}}</td>
     </tr>

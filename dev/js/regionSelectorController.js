@@ -2,8 +2,6 @@ var app = angular.module('riftwalkerApp');
 
 app.controller('RegionSelectorController', ['DataService', '$scope', function (DataService, $scope) {
 
-
-
     var regions = [
         { region: 'BR', platformID: 'BR1', host: 'br.api.pvp.net' },
         { region:'EUNE', platformID: 'EUN1', host: 'eune.api.pvp.net'},

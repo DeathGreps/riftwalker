@@ -28,6 +28,7 @@ app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http',
 
     $scope.changedChampionSelection = function(championName) {
         $scope.selectedChampionData = $scope.championData.data[championName];
+        DataService.setChampion($scope.selectedChampionData);
     };
 
     $scope.getChampionImage = function(imageFullName) {

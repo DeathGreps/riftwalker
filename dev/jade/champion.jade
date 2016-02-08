@@ -18,41 +18,41 @@ p selected region in champion: {{selectedRegion}} <br />
       td {{selectedChampionData.stats.hpperlevel}}
     tr
       td Health Regen
-      td {{selectedChampionData.stats.hpregen}}
+      td {{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}
       td Health Regen/Level
       td {{selectedChampionData.stats.hpregenperlevel}}
     tr
       td Armor 
-      td {{selectedChampionData.stats.armor}}
-      td Magic Resistance
-      td {{selectedChampionData.stats.spellblock}}
-    tr
+      td {{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}
       td Armor/Level
       td {{selectedChampionData.stats.armorperlevel}}
+    tr
+      td Magic Resistance
+      td {{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}
       td Magic Resistance/Level
       td {{selectedChampionData.stats.spellblockperlevel}}
     tr
       td Attack Damage
-      td {{selectedChampionData.stats.attackdamage}}
-      td Mana
-      td {{selectedChampionData.stats.mp}}
-    tr
+      td {{selectedChampionData.stats.attackdamage + ((championLevel-1) * selectedChampionData.stats.attackdamageperlevel) | number: 1}}
       td Attack Damage/Level
       td {{selectedChampionData.stats.attackdamageperlevel}}
+    tr
+      td Mana
+      td {{selectedChampionData.stats.mp + ((championLevel-1) * selectedChampionData.stats.mpperlevel) | number: 1}}
       td Mana/Level
       td {{selectedChampionData.stats.mpperlevel}}
     tr
-      td Attack Range
-      td {{selectedChampionData.stats.attackrange}}
       td Mana Regen
-      td {{selectedChampionData.stats.mpregen}}
-    tr
-      td Attack Speed Offset
-      td {{selectedChampionData.stats.attackspeedoffset}}
+      td {{selectedChampionData.stats.mpregen + ((championLevel-1) * selectedChampionData.stats.mpregenperlevel) | number: 1}}
       td Mana Regen/Level
       td {{selectedChampionData.stats.mpregenperlevel}}
     tr
+      td Attack Speed Offset
+      td {{selectedChampionData.stats.attackspeedoffset + ((championLevel-1) * selectedChampionData.stats.attackspeedperlevel) | number: 2}}
       td Attack Speed/Level
       td {{selectedChampionData.stats.attackspeedperlevel}}
+    tr
+      td Attack Range
+      td {{selectedChampionData.stats.attackrange}}
       td Movement Speed
       td {{selectedChampionData.stats.movespeed}}
