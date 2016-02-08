@@ -1,1 +1,10 @@
 h2 Item Set Form
+
+p {{1 + 1}}
+
+//- p {{itemBasic}}
+.itemUnit(ng-repeat="item in itemData")
+  span {{item.name}}
+  img(ng-if='itemData'  ng-src='{{getItemImage(item.image.full)}}')
+  
+//- p {{itemGroups}}
