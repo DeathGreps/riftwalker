@@ -9,11 +9,26 @@
 //
 body {
     font-family: $roboto-font;
-    // color: $color-secondary-1-0;
-    background-color: '#ffffff';
     margin: 0px;
+    height: 800px;
 }
-//
+
+.md-button {
+
+  img {
+    vertical-align: middle;
+    border-radius: 10px;
+    height: 50px;
+    width:110px;
+    object-fit: none;
+  }
+  span {
+    padding-left: 1em;
+  }
+}.selected {
+  color: $color-secondary-1-4;
+}
+
 // #navbar {
 //     position: fixed;
 //     text-align: center;

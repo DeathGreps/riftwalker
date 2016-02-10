@@ -1,5 +1,50 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300);
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"); }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: '#ffffff';
-  margin: 0px; }
+  margin: 0px;
+  height: 800px; }
+
+.md-button img {
+  vertical-align: middle;
+  border-radius: 10px;
+  height: 50px;
+  width: 110px;
+  object-fit: none; }
+
+.md-button span {
+  padding-left: 1em; }
+
+.selected {
+  color: #0070CE; }

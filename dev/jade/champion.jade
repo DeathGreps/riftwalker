@@ -1,58 +1,78 @@
-h2 champion selector
-p selected region in champion: {{selectedRegion}} <br />
-  select(name='championSelect' ng-if="championData" id='championSelect' ng-options='v as v for (k, v) in championKeys' ng-change='changedChampionSelection(selectedChampion)' ng-model='selectedChampion')
-  h2 Name: {{selectedChampionData.name}}
+md-content(layout='column' flex)
+  md-content(layout='row' flex)
+    md-toolbar(layout='row')
+      md-button(class='menu' hide-gt-sm ng-click='toggleList()')
+        p <i class="material-icons">list</i>
+      h2 Select a Champion
+
+  md-content(layout='row' flex)
+    div(layout='column')
+      md-sidenav(layout='column' md-is-locked-open='$mdMedia("gt-sm")' md-component-id="left" class='md-sidenav-left md-whiteframe-z2' flex ng-click='toggleList()')
+        md-list
+          md-list-item(ng-repeat='champion in championData')
+            md-button(ng-click='changedChampionSelection(champion)' ng-class='{"selected" : champion === selectedChampionData }')
+              img(ng-src='{{ getChampionImage(champion.image.full) }}' class='avatar-icon' aria-label='{{champion.name}}')
+              span {{champion.name}}
+            md-icon(class="avatar")
+      
+    md-content(id='content' class='md-content md-padding' flex)
+      h4 {{selectedChampionData.name}}
+      h4 <i>{{(selectedChampionData.title.charAt(0).toUpperCase() + selectedChampionData.title.slice(1)) }}</i>
+      
+      img(ng-if='selectedChampionData.image.full' ng-src='{{getChampionImage(selectedChampionData.image.full)}}')
+      form(name="championForm")
+        span Select a level: 
+          input(type="number" name="championLevel" ng-model="championLevel" placeholder="Enter a level" min="1" max="18")
+        span(ng-show="championForm.championLevel.$error.integer") The value is not a valid integer!
+        span(ng-show="championForm.championLevel.$error.min || championForm.championLevel.$error.max") lol pls. this level isn't 1-18 :(
+        
+      table(border="1") Stats
+        tr
+          td Health
+          td {{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}
+          td Health/Level
+          td {{selectedChampionData.stats.hpperlevel}}
+        tr
+          td Health Regen
+          td {{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}
+          td Health Regen/Level
+          td {{selectedChampionData.stats.hpregenperlevel}}
+        tr
+          td Armor 
+          td {{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}
+          td Armor/Level
+          td {{selectedChampionData.stats.armorperlevel}}
+        tr
+          td Magic Resistance
+          td {{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}
+          td Magic Resistance/Level
+          td {{selectedChampionData.stats.spellblockperlevel}}
+        tr
+          td Attack Damage
+          td {{selectedChampionData.stats.attackdamage + ((championLevel-1) * selectedChampionData.stats.attackdamageperlevel) | number: 1}}
+          td Attack Damage/Level
+          td {{selectedChampionData.stats.attackdamageperlevel}}
+        tr
+          td Mana
+          td {{selectedChampionData.stats.mp + ((championLevel-1) * selectedChampionData.stats.mpperlevel) | number: 1}}
+          td Mana/Level
+          td {{selectedChampionData.stats.mpperlevel}}
+        tr
+          td Mana Regen
+          td {{selectedChampionData.stats.mpregen + ((championLevel-1) * selectedChampionData.stats.mpregenperlevel) | number: 1}}
+          td Mana Regen/Level
+          td {{selectedChampionData.stats.mpregenperlevel}}
+        tr
+          td Attack Speed Offset
+          td {{selectedChampionData.stats.attackspeedoffset + ((championLevel-1) * selectedChampionData.stats.attackspeedperlevel) | number: 2}}
+          td Attack Speed/Level
+          td {{selectedChampionData.stats.attackspeedperlevel}}
+        tr
+          td Attack Range
+          td {{selectedChampionData.stats.attackrange}}
+          td Movement Speed
+          td {{selectedChampionData.stats.movespeed}}
+      
+      p(ng-bind-html='selectedChampionData.lore')
   
-  h4 {{(selectedChampionData.title.charAt(0).toUpperCase() + selectedChampionData.title.slice(1)) }}
-  img(ng-if='selectedChampionData.image.full' ng-src='{{getChampionImage(selectedChampionData.image.full)}}')
-  form(name="championForm")
-    input(type="number" name="championLevel" ng-model="championLevel" placeholder="Enter a level" min="1" max="18")
-    span(ng-show="championForm.championLevel.$error.integer") The value is not a valid integer!
-    span(ng-show="championForm.championLevel.$error.min || championForm.championLevel.$error.max") lol pls. this level isn't 1-18 :(
-    
-  table(border="1") Stats
-    tr
-      td Health
-      td {{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}
-      td Health/Level
-      td {{selectedChampionData.stats.hpperlevel}}
-    tr
-      td Health Regen
-      td {{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}
-      td Health Regen/Level
-      td {{selectedChampionData.stats.hpregenperlevel}}
-    tr
-      td Armor 
-      td {{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}
-      td Armor/Level
-      td {{selectedChampionData.stats.armorperlevel}}
-    tr
-      td Magic Resistance
-      td {{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}
-      td Magic Resistance/Level
-      td {{selectedChampionData.stats.spellblockperlevel}}
-    tr
-      td Attack Damage
-      td {{selectedChampionData.stats.attackdamage + ((championLevel-1) * selectedChampionData.stats.attackdamageperlevel) | number: 1}}
-      td Attack Damage/Level
-      td {{selectedChampionData.stats.attackdamageperlevel}}
-    tr
-      td Mana
-      td {{selectedChampionData.stats.mp + ((championLevel-1) * selectedChampionData.stats.mpperlevel) | number: 1}}
-      td Mana/Level
-      td {{selectedChampionData.stats.mpperlevel}}
-    tr
-      td Mana Regen
-      td {{selectedChampionData.stats.mpregen + ((championLevel-1) * selectedChampionData.stats.mpregenperlevel) | number: 1}}
-      td Mana Regen/Level
-      td {{selectedChampionData.stats.mpregenperlevel}}
-    tr
-      td Attack Speed Offset
-      td {{selectedChampionData.stats.attackspeedoffset + ((championLevel-1) * selectedChampionData.stats.attackspeedperlevel) | number: 2}}
-      td Attack Speed/Level
-      td {{selectedChampionData.stats.attackspeedperlevel}}
-    tr
-      td Attack Range
-      td {{selectedChampionData.stats.attackrange}}
-      td Movement Speed
-      td {{selectedChampionData.stats.movespeed}}
+      itemset-form(ng-controller='ItemSetController')

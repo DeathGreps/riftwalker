@@ -1,33 +1,24 @@
 var app = angular.module('riftwalkerApp');
 
-app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http',function( DataService, $scope, $http ) {
-
-    $scope.$watch(
-        function () { return DataService.getRegion(); },
-        function (newValue, oldValue) {
-            if (newValue !== oldValue)
-                $scope.selectedRegion = newValue;
-        }
-    );
+app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http', '$mdSidenav', function( DataService, $scope, $http, $mdSidenav ) {
 
     var getChampionData = function(selRegion) {
         $http({
             method: 'GET',
             dataType: 'jsonp',
             // url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region
-            url: 'https://global.api.pvp.net/api/lol/static-data/' + DataService.getRegion().region.toLowerCase() + '/v1.2/champion?champData=all&api_key=8154a173-96ac-4d43-9c36-7cbc0caff087'
+            url: 'https://global.api.pvp.net/api/lol/static-data/' + DataService.getRegion().region.toLowerCase() + '/v1.2/champion?champData=all&api_key='
         }).then(function successCallback(response) {
 
-            $scope.championData = response.data;
+            $scope.championData = response.data.data;
             $scope.championKeys = response.data.keys;
 
         }, function errorCallback(response) {
             console.log(response);
         });
     };
-
-    $scope.changedChampionSelection = function(championName) {
-        $scope.selectedChampionData = $scope.championData.data[championName];
+    $scope.changedChampionSelection = function(champion) {
+        $scope.selectedChampionData = $scope.championData[champion.key];
         DataService.setChampion($scope.selectedChampionData);
     };
 
@@ -42,6 +33,34 @@ app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http',
     $scope.selectedChampion = '';
     $scope.selectedChampionData = {};
     $scope.championLevel = 1;
+
+    var getChampionData = function(selRegion) {
+        $http({
+            method: 'GET',
+            dataType: 'jsonp',
+            // url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region
+            url: 'https://global.api.pvp.net/api/lol/static-data/' + DataService.getRegion().region.toLowerCase() + '/v1.2/champion?champData=all&api_key=8154a173-96ac-4d43-9c36-7cbc0caff087'
+        }).then(function successCallback(response) {
+
+            $scope.championData = response.data.data;
+            $scope.championKeys = response.data.keys;
+
+        }, function errorCallback(response) {
+            console.log(response);
+        });
+    };
+
+    $scope.toggleList = function() {
+        $mdSidenav('left').toggle();
+    }
+
+    $scope.$watch(
+        function () { return DataService.getRegion(); },
+        function (newValue, oldValue) {
+            if (newValue !== oldValue)
+                $scope.selectedRegion = newValue;
+        }
+    );
 }])
 .directive('championSelector', function () {
   return {
