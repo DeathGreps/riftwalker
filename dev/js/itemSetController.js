@@ -27,6 +27,19 @@ app.controller('ItemSetController', [ 'DataService', '$scope', '$http',function(
 
   var itemImageUrl = "http://ddragon.leagueoflegends.com/cdn/6.2.1/img/item/";
   getItems();
+
+  $scope.selectTreeHeader = function(treeHeader) {
+    if ($scope.treeHeadersSelected.indexOf(treeHeader) >= 0) {
+      $scope.treeHeadersSelected.splice($scope.treeHeadersSelected.indexOf(treeHeader), 1);
+    } else {
+      $scope.treeHeadersSelected.push(treeHeader);
+    }
+  }
+
+  $scope.filterSORTINDEX = function(value) {
+    return value != '_SORTINDEX';
+  }
+
   $scope.selectedRegion = DataService.getRegion();
 
   $scope.items = getItems();
@@ -34,6 +47,8 @@ app.controller('ItemSetController', [ 'DataService', '$scope', '$http',function(
   $scope.itemBasic;
   $scope.itemTree;
   $scope.itemGroups;
+
+  $scope.treeHeadersSelected = [];
 }])
 .directive('itemsetForm', function () {
   return {

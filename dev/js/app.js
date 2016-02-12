@@ -1,1 +1,1 @@
-var app = angular.module('riftwalkerApp', ['ngMaterial', 'ngSanitize']);
+var app = angular.module('riftwalkerApp', ['ngMaterial', 'ngSanitize', 'ngAnimate']);

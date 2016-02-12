@@ -1,3 +1,10 @@
 
 <h2>Item Set Form</h2>
-<div ng-repeat="item in itemData" class="itemUnit"><span>{{item.name}}</span><img ng-if="itemData" ng-src="{{getItemImage(item.image.full)}}"/></div>
+<ul id="accordion" class="accordion">
+  <li ng-repeat="item in itemTree" class="collapsed"> 
+    <div ng-click="onOff=!onOff" ng-class="{on:onOff}" class="link">{{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}</div>
+    <ul ng-if="onOff==true" class="submenu">
+      <li ng-repeat="tag in item.tags.filter(filterSORTINDEX)"><a href="#">{{tag}}</a></li>
+    </ul>
+  </li>
+</ul>
