@@ -1,17 +1,62 @@
 
-<md-content layout="row" layout-gt-sm="row" flex="flex">
-  <ul id="accordion" class="accordion">
-    <li ng-repeat="item in itemTree" class="collapsed"> 
-      <div ng-click="onOff=!onOff" ng-class="{on:onOff}" class="link"><span>{{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}</span><span ng-class="{active:onOff, focus:onOff}" class="arrow-down"><i class="material-icons">keyboard_arrow_down</i></span></div>
-      <ul ng-if="onOff==true" class="submenu">
-        <li ng-repeat="tag in item.tags.filter(filterSORTINDEX)"><a ng-click="selectTreeTag(tag)">{{tag.charAt(0) + tag.slice(1).toLowerCase()}}</a></li>
+<md-toolbar layout="row" class="md-padding">
+  <h2>Select your Items</h2>
+</md-toolbar>
+<div layout="column">
+  <md-card layout="column" layout-gt-sm="row">
+    <md-card-header layout="row" sm-layout="column" flex-gt-sm="20">
+      <md-card-title class="md-headline">Item Filters</md-card-title>
+    </md-card-header>
+    <md-card-content flex-gt-sm="80">
+      <md-chips ng-model="treeTagsSelected" placeholder="hello">
+        <md-chip-template>{{$chip.charAt(0) + $chip.slice(1).toLowerCase()}}  </md-chip-template>
+        <button md-chip-remove="" class="chip-remove-btn">
+          <md-icon md-svg-icon="md-close"></md-icon>
+        </button>
+      </md-chips>
+    </md-card-content>
+  </md-card>
+  <md-card layout="colum">
+    <md-card-header layout="row" sm-layout="column" flex-gt-sm="20">
+      <md-card-title class="md-headline">Item Categories</md-card-title>
+    </md-card-header>
+    <md-content layout="row" layout-gt-sm="row" flex="flex">
+      <ul id="accordion" class="accordion">
+        <li ng-repeat="item in itemTree.slice(0, 3)" class="collapsed"> 
+          <div ng-click="onOff=!onOff" ng-class="{on:onOff}" class="link"><span>{{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}</span><span ng-class="{active:onOff, focus:onOff}" class="arrow-down"><i class="material-icons">keyboard_arrow_down</i></span></div>
+          <ul ng-if="onOff==true" class="submenu">
+            <li ng-repeat="tag in item.tags.filter(filterSORTINDEX)"><a ng-click="selectTreeTag(tag)">{{tag.charAt(0) + tag.slice(1).toLowerCase()}}</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-  </ul>
-  <md-chips ng-model="treeTagsSelected" placeholder="hello">
-    <md-chip-template>{{$chip.charAt(0) + $chip.slice(1).toLowerCase()}}  </md-chip-template>
-    <button md-chip-remove="" class="chip-remove-btn">
-      <md-icon md-svg-icon="md-close"></md-icon>
-    </button>
-  </md-chips>
-</md-content>
+      <ul id="accordion" class="accordion">
+        <li ng-repeat="item in itemTree.slice(3, 6)" class="collapsed"> 
+          <div ng-click="onOff=!onOff" ng-class="{on:onOff}" class="link"><span>{{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}</span><span ng-class="{active:onOff, focus:onOff}" class="arrow-down"><i class="material-icons">keyboard_arrow_down</i></span></div>
+          <ul ng-if="onOff==true" class="submenu">
+            <li ng-repeat="tag in item.tags.filter(filterSORTINDEX)"><a ng-click="selectTreeTag(tag)">{{tag.charAt(0) + tag.slice(1).toLowerCase()}}</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="accordion" class="accordion">
+        <li ng-repeat="item in itemTree.slice(6)" class="collapsed"> 
+          <div ng-click="onOff=!onOff" ng-class="{on:onOff}" class="link"><span>{{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}</span><span ng-class="{active:onOff, focus:onOff}" class="arrow-down"><i class="material-icons">keyboard_arrow_down</i></span></div>
+          <ul ng-if="onOff==true" class="submenu">
+            <li ng-repeat="tag in item.tags.filter(filterSORTINDEX)"><a ng-click="selectTreeTag(tag)">{{tag.charAt(0) + tag.slice(1).toLowerCase()}}</a></li>
+          </ul>
+        </li>
+      </ul>
+    </md-content>
+  </md-card>
+  <md-card layout="column">
+    <md-card-header layout="row" sm-layout="column" flex-gt-sm="20">
+      <md-card-title class="md-headline">Items</md-card-title>
+    </md-card-header>
+    <md-content layout="column">
+      <md-grid-list md-cols="3" md-cols-gt-xs="10" md-cols-gt-md="20" md-row-height="1:1" md-gutter="2px">
+        <md-grid-tile md-colspan="1" ng-repeat="(key,value) in itemData">
+          <md-grid-tile-header> <img ng-src="{{ getItemImage(value.image.full) }}"/></md-grid-tile-header>
+        </md-grid-tile>
+      </md-grid-list>
+    </md-content>
+  </md-card>
+</div>

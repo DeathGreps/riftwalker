@@ -4,7 +4,7 @@
     <md-button ng-click="toggleList()" class="menu">
       <p><i class="material-icons">list</i></p>
     </md-button>
-    <h2>Select a Champion </h2>
+    <h2>Select a Champion</h2>
   </md-toolbar>
   <md-content layout="row" flex="flex">
     <md-sidenav layout="column" md-is-locked-open="$mdMedia(&quot;gt-sm&quot;)" md-component-id="left" flex="flex" ng-click="toggleList()" class="md-sidenav-left md-whiteframe-z2">
@@ -15,8 +15,8 @@
       </md-list>
     </md-sidenav>
     <md-content layout="row" sm-layout="column" flex="flex" class="md-padding">
-      <div layout="column">
-        <md-card>
+      <div layout="column" ng-if="selectedChampionData.name.length &gt; 0">
+        <md-card flex="50">
           <md-card-header layout="row" sm-layout="column" class="no-padding-bottom">
             <md-card-title layout="column">
               <h2 class="md-headline">{{selectedChampionData.name}}</h2>
@@ -29,7 +29,7 @@
             <div contenteditable="false" flex="flex" ng-bind-html="selectedChampionData.lore" class="champion-lore"></div>
           </md-card-content>
         </md-card>
-        <md-card layout="column" layout-gt-sm="column">
+        <md-card layout="column" layout-gt-sm="column" flex="50">
           <md-card-header layout="row" sm-layout="column" flex-gt-sm="33" class="no-padding-bottom">
             <md-card-title>
               <h2 class="md-headline">Base Stats for {{selectedChampionData.name}}</h2>
@@ -88,16 +88,6 @@
                 <td>{{selectedChampionData.stats.movespeed}}</td>
               </tr>
             </table>
-          </md-card-content>
-        </md-card>
-        <md-card layout="column" layout-gt-sm="column" class="scrollable">
-          <md-card-header layout="row" sm-layout="column" flex-gt-sm="30">
-            <md-card-title>
-              <h2 class="md-headline">Item Set Filters</h2>
-            </md-card-title>
-          </md-card-header>
-          <md-card-content flex-gt-sm="70">
-            <itemset-form ng-controller="ItemSetController"></itemset-form>
           </md-card-content>
         </md-card>
       </div>

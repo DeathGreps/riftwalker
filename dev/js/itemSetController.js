@@ -23,12 +23,13 @@ app.controller('ItemSetController', [ 'DataService', '$scope', '$http',function(
       });
   };
 
+  getItems();
+
   $scope.getItemImage = function(imageFullName) {
       return itemImageUrl + imageFullName;
   };
 
-  var itemImageUrl = "http://ddragon.leagueoflegends.com/cdn/6.2.1/img/item/";
-  getItems();
+  var itemImageUrl = "http://ddragon.leagueoflegends.com/cdn/6.3.1/img/item/";
 
   $scope.selectTreeTag = function(treeHeader) {
     if ($scope.treeTagsSelected.indexOf(treeHeader) >= 0) {

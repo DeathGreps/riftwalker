@@ -14,13 +14,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   </head>
   <body layout="column" ng-app="riftwalkerApp">
-    <div id="pageContent">
-      <div id="pageTitle">Welcome to Riftwalker</div>
-      <p>
-        Welcome! This is a side project by DeliriumDrop for creating item sets for League of Legends while displaying statistics. It uses the official Riot API. While the app is not yet mature, feel free to contact me about how I plan to do this, or if you have any questions or suggestions. 
-        <a href="riftwalker.html">Check out the app here</a>.
-      </p>
-    </div>
+    <md-content layout="column" layout-fill>
+      <md-tabs layout="column" layout-fill flex>
+        <md-tab label="1. Select a Champion" layout="column" flex>
+          <md-tab-content layout-fill flex>
+            <champion-selector ng-controller="ChampionSelectorController" layout="column" layout-fill flex></champion-selector>
+          </md-tab-content>
+        </md-tab>
+        <md-tab label="2. Select your Items">
+          <md-tab-content layout-fill flex>
+            <itemset-form ng-controller="ItemSetController" layout="column" layout-fill flex></itemset-form>
+          </md-tab-content>
+        </md-tab>
+        <md-tab label="3. Review your Item Set">
+          <md-tab-content layout-fill flex class="md-padding">
+            <h2>Under Construction</h2>
+          </md-tab-content>
+        </md-tab>
+      </md-tabs>
+    </md-content>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>

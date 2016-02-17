@@ -2,7 +2,7 @@ md-content(layout='column' flex)
   md-toolbar(layout='row')
     md-button(class='menu' ng-click='toggleList()')
       p <i class="material-icons">list</i>
-    h2 Select a Champion 
+    h2 Select a Champion
 
 
   md-content(layout='row' flex)
@@ -13,11 +13,11 @@ md-content(layout='column' flex)
             img(ng-src='{{ getChampionImage(champion.image.full) }}' class='avatar-icon' aria-label='{{champion.name}}')
             span {{champion.name}}
   
-  
+    
     md-content(layout='row' sm-layout='column' class='md-padding' flex)
-      div(layout='column')
+      div(layout='column' ng-if='selectedChampionData.name.length > 0')
       
-        md-card
+        md-card(flex='50')
           md-card-header.no-padding-bottom(layout='row' sm-layout='column')
             md-card-title(layout='column')
               h2.md-headline {{selectedChampionData.name}}
@@ -28,7 +28,7 @@ md-content(layout='column' flex)
             p {{selectedChampionData.name}}'s Lore: 
             .champion-lore(contenteditable="false" flex ng-bind-html='selectedChampionData.lore')
             
-        md-card(layout='column' layout-gt-sm='column')
+        md-card(layout='column' layout-gt-sm='column' flex='50')
           md-card-header.no-padding-bottom(layout='row' sm-layout='column' flex-gt-sm='33')
             md-card-title
               h2.md-headline Base Stats for {{selectedChampionData.name}}
@@ -45,15 +45,15 @@ md-content(layout='column' flex)
               tr
                 td Health (+{{selectedChampionData.stats.hpperlevel}}/lvl)
                 td {{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}
-
+    
               tr
                 td Health Regen (+{{selectedChampionData.stats.hpregenperlevel}}/lvl)
                 td {{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}
-
+    
               tr
                 td Armor (+{{selectedChampionData.stats.armorperlevel}}/lvl)
                 td {{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}
-
+    
               tr
                 td Magic Resistance (+{{selectedChampionData.stats.spellblockperlevel}}/lvl)
                 td {{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}
@@ -78,11 +78,3 @@ md-content(layout='column' flex)
               tr
                 td Movement Speed
                 td {{selectedChampionData.stats.movespeed}}
-                
-        md-card.scrollable(layout='column' layout-gt-sm='column')
-          md-card-header(layout='row' sm-layout='column' flex-gt-sm='30')
-            md-card-title
-              h2.md-headline Item Set Filters
-          md-card-content(flex-gt-sm='70')
-            itemset-form(ng-controller='ItemSetController')
-            

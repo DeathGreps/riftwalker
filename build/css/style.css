@@ -22,6 +22,9 @@
 .scrollable {
   overflow: auto; }
 
+md-grid-tile {
+  background: transparent; }
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -48,8 +51,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0px;
-  height: 800px; }
+  margin: 0px; }
 
 .md-button img {
   vertical-align: middle;
