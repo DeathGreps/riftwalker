@@ -1,86 +1,106 @@
 
 <md-content layout="column" flex="flex">
+  <md-toolbar layout="row">
+    <md-button ng-click="toggleList()" class="menu">
+      <p><i class="material-icons">list</i></p>
+    </md-button>
+    <h2>Select a Champion </h2>
+  </md-toolbar>
   <md-content layout="row" flex="flex">
-    <md-toolbar layout="row">
-      <md-button hide-gt-sm="hide-gt-sm" ng-click="toggleList()" class="menu">
-        <p><i class="material-icons">list</i></p>
-      </md-button>
-      <h2>Select a Champion</h2>
-    </md-toolbar>
-  </md-content>
-  <md-content layout="row" flex="flex">
-    <div layout="column">
-      <md-sidenav layout="column" md-is-locked-open="$mdMedia(&quot;gt-sm&quot;)" md-component-id="left" flex="flex" ng-click="toggleList()" class="md-sidenav-left md-whiteframe-z2">
-        <md-list>
-          <md-list-item ng-repeat="champion in championData">
-            <md-button ng-click="changedChampionSelection(champion)" ng-class="{&quot;selected&quot; : champion === selectedChampionData }"><img ng-src="{{ getChampionImage(champion.image.full) }}" aria-label="{{champion.name}}" class="avatar-icon"/><span>{{champion.name}}</span></md-button>
-            <md-icon class="avatar"></md-icon>
-          </md-list-item>
-        </md-list>
-      </md-sidenav>
-    </div>
-    <md-content id="content" flex="flex" class="md-content md-padding">
-      <h4>{{selectedChampionData.name}}</h4>
-      <h4><i>{{(selectedChampionData.title.charAt(0).toUpperCase() + selectedChampionData.title.slice(1)) }}</i></h4><img ng-if="selectedChampionData.image.full" ng-src="{{getChampionImage(selectedChampionData.image.full)}}"/>
-      <form name="championForm"><span>Select a level: 
-          <input type="number" name="championLevel" ng-model="championLevel" placeholder="Enter a level" min="1" max="18"/></span><span ng-show="championForm.championLevel.$error.integer">The value is not a valid integer!</span><span ng-show="championForm.championLevel.$error.min || championForm.championLevel.$error.max">lol pls. this level isn't 1-18 :(</span></form>
-      <table border="1">Stats
-        <tr>
-          <td>Health</td>
-          <td>{{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}</td>
-          <td>Health/Level</td>
-          <td>{{selectedChampionData.stats.hpperlevel}}</td>
-        </tr>
-        <tr>
-          <td>Health Regen</td>
-          <td>{{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}</td>
-          <td>Health Regen/Level</td>
-          <td>{{selectedChampionData.stats.hpregenperlevel}}</td>
-        </tr>
-        <tr>
-          <td>Armor </td>
-          <td>{{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}</td>
-          <td>Armor/Level</td>
-          <td>{{selectedChampionData.stats.armorperlevel}}</td>
-        </tr>
-        <tr>
-          <td>Magic Resistance</td>
-          <td>{{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}</td>
-          <td>Magic Resistance/Level</td>
-          <td>{{selectedChampionData.stats.spellblockperlevel}}</td>
-        </tr>
-        <tr>
-          <td>Attack Damage</td>
-          <td>{{selectedChampionData.stats.attackdamage + ((championLevel-1) * selectedChampionData.stats.attackdamageperlevel) | number: 1}}</td>
-          <td>Attack Damage/Level</td>
-          <td>{{selectedChampionData.stats.attackdamageperlevel}}</td>
-        </tr>
-        <tr>
-          <td>Mana</td>
-          <td>{{selectedChampionData.stats.mp + ((championLevel-1) * selectedChampionData.stats.mpperlevel) | number: 1}}</td>
-          <td>Mana/Level</td>
-          <td>{{selectedChampionData.stats.mpperlevel}}</td>
-        </tr>
-        <tr>
-          <td>Mana Regen</td>
-          <td>{{selectedChampionData.stats.mpregen + ((championLevel-1) * selectedChampionData.stats.mpregenperlevel) | number: 1}}</td>
-          <td>Mana Regen/Level</td>
-          <td>{{selectedChampionData.stats.mpregenperlevel}}</td>
-        </tr>
-        <tr>
-          <td>Attack Speed Offset</td>
-          <td>{{selectedChampionData.stats.attackspeedoffset + ((championLevel-1) * selectedChampionData.stats.attackspeedperlevel) | number: 2}}</td>
-          <td>Attack Speed/Level</td>
-          <td>{{selectedChampionData.stats.attackspeedperlevel}}</td>
-        </tr>
-        <tr>
-          <td>Attack Range</td>
-          <td>{{selectedChampionData.stats.attackrange}}</td>
-          <td>Movement Speed</td>
-          <td>{{selectedChampionData.stats.movespeed}}</td>
-        </tr>
-      </table>
-      <itemset-form ng-controller="ItemSetController"></itemset-form>
+    <md-sidenav layout="column" md-is-locked-open="$mdMedia(&quot;gt-sm&quot;)" md-component-id="left" flex="flex" ng-click="toggleList()" class="md-sidenav-left md-whiteframe-z2">
+      <md-list>
+        <md-list-item ng-repeat="champion in championData">
+          <md-button ng-click="changedChampionSelection(champion)" ng-class="{&quot;selected&quot; : champion === selectedChampionData }"><img ng-src="{{ getChampionImage(champion.image.full) }}" aria-label="{{champion.name}}" class="avatar-icon"/><span>{{champion.name}}</span></md-button>
+        </md-list-item>
+      </md-list>
+    </md-sidenav>
+    <md-content layout="row" sm-layout="column" flex="flex" class="md-padding">
+      <div layout="column">
+        <md-card>
+          <md-card-header layout="row" sm-layout="column" class="no-padding-bottom">
+            <md-card-title layout="column">
+              <h2 class="md-headline">{{selectedChampionData.name}}</h2>
+              <h3 class="md-subhead no-margin-top"><i>{{(selectedChampionData.title.charAt(0).toUpperCase() + selectedChampionData.title.slice(1)) }}</i></h3>
+            </md-card-title>
+            <md-user-avatar><img ng-if="selectedChampionData.image.full" ng-src="{{getChampionImage(selectedChampionData.image.full)}}"/></md-user-avatar>
+          </md-card-header>
+          <md-card-content class="no-padding-top">
+            <p>{{selectedChampionData.name}}'s Lore: </p>
+            <div contenteditable="false" flex="flex" ng-bind-html="selectedChampionData.lore" class="champion-lore"></div>
+          </md-card-content>
+        </md-card>
+        <md-card layout="column" layout-gt-sm="column">
+          <md-card-header layout="row" sm-layout="column" flex-gt-sm="33" class="no-padding-bottom">
+            <md-card-title>
+              <h2 class="md-headline">Base Stats for {{selectedChampionData.name}}</h2>
+            </md-card-title>
+          </md-card-header>
+          <md-card-content flex-gt-sm="33" class="no-padding-bottom">
+            <form name="championForm"><span>Select a level (1-18):
+                <button ng-disabled="championLevel &lt; 2" ng-click="championLevel = championLevel - 1" class="blank-btn"><i class="material-icons">remove_circle</i></button>
+                <input type="number" name="championLevel" ng-model="championLevel" min="1" max="18" class="champion-level"/>
+                <button ng-disabled="championLevel &gt; 17" ng-click="championLevel = championLevel + 1" class="blank-btn"><i class="material-icons">add_circle</i></button></span></form>
+          </md-card-content>
+          <md-card-content flex-gt-sm="33" layout-xs="column" layout-gt-xs="row" class="no-padding-top">
+            <table>
+              <tr>
+                <td>Health (+{{selectedChampionData.stats.hpperlevel}}/lvl)</td>
+                <td>{{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}</td>
+              </tr>
+              <tr>
+                <td>Health Regen (+{{selectedChampionData.stats.hpregenperlevel}}/lvl)</td>
+                <td>{{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}</td>
+              </tr>
+              <tr>
+                <td>Armor (+{{selectedChampionData.stats.armorperlevel}}/lvl)</td>
+                <td>{{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}</td>
+              </tr>
+              <tr>
+                <td>Magic Resistance (+{{selectedChampionData.stats.spellblockperlevel}}/lvl)</td>
+                <td>{{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Attack Damage (+{{selectedChampionData.stats.attackdamageperlevel}}/lvl)</td>
+                <td>{{selectedChampionData.stats.attackdamage + ((championLevel-1) * selectedChampionData.stats.attackdamageperlevel) | number: 1}}</td>
+              </tr>
+              <tr>
+                <td>Mana (+{{selectedChampionData.stats.mpperlevel}}/lvl)</td>
+                <td>{{selectedChampionData.stats.mp + ((championLevel-1) * selectedChampionData.stats.mpperlevel) | number: 1}}</td>
+              </tr>
+              <tr>
+                <td>Mana Regen (+{{selectedChampionData.stats.mpregenperlevel}}/lvl)</td>
+                <td>{{selectedChampionData.stats.mpregen + ((championLevel-1) * selectedChampionData.stats.mpregenperlevel) | number: 1}}</td>
+              </tr>
+              <tr>
+                <td>Attack Speed Offset (+{{selectedChampionData.stats.attackspeedperlevel}}/lvl)</td>
+                <td>{{selectedChampionData.stats.attackspeedoffset + ((championLevel-1) * selectedChampionData.stats.attackspeedperlevel) | number: 2}}</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Attack Range</td>
+                <td>{{selectedChampionData.stats.attackrange}}</td>
+              </tr>
+              <tr>
+                <td>Movement Speed</td>
+                <td>{{selectedChampionData.stats.movespeed}}</td>
+              </tr>
+            </table>
+          </md-card-content>
+        </md-card>
+        <md-card layout="column" layout-gt-sm="column" class="scrollable">
+          <md-card-header layout="row" sm-layout="column" flex-gt-sm="30">
+            <md-card-title>
+              <h2 class="md-headline">Item Set Filters</h2>
+            </md-card-title>
+          </md-card-header>
+          <md-card-content flex-gt-sm="70">
+            <itemset-form ng-controller="ItemSetController"></itemset-form>
+          </md-card-content>
+        </md-card>
+      </div>
     </md-content>
   </md-content>
 </md-content>

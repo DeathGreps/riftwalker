@@ -1,78 +1,88 @@
 md-content(layout='column' flex)
-  md-content(layout='row' flex)
-    md-toolbar(layout='row')
-      md-button(class='menu' hide-gt-sm ng-click='toggleList()')
-        p <i class="material-icons">list</i>
-      h2 Select a Champion
+  md-toolbar(layout='row')
+    md-button(class='menu' ng-click='toggleList()')
+      p <i class="material-icons">list</i>
+    h2 Select a Champion 
+
 
   md-content(layout='row' flex)
-    div(layout='column')
-      md-sidenav(layout='column' md-is-locked-open='$mdMedia("gt-sm")' md-component-id="left" class='md-sidenav-left md-whiteframe-z2' flex ng-click='toggleList()')
-        md-list
-          md-list-item(ng-repeat='champion in championData')
-            md-button(ng-click='changedChampionSelection(champion)' ng-class='{"selected" : champion === selectedChampionData }')
-              img(ng-src='{{ getChampionImage(champion.image.full) }}' class='avatar-icon' aria-label='{{champion.name}}')
-              span {{champion.name}}
-            md-icon(class="avatar")
-      
-    md-content(id='content' class='md-content md-padding' flex)
-      h4 {{selectedChampionData.name}}
-      h4 <i>{{(selectedChampionData.title.charAt(0).toUpperCase() + selectedChampionData.title.slice(1)) }}</i>
-      
-      img(ng-if='selectedChampionData.image.full' ng-src='{{getChampionImage(selectedChampionData.image.full)}}')
-      form(name="championForm")
-        span Select a level: 
-          input(type="number" name="championLevel" ng-model="championLevel" placeholder="Enter a level" min="1" max="18")
-        span(ng-show="championForm.championLevel.$error.integer") The value is not a valid integer!
-        span(ng-show="championForm.championLevel.$error.min || championForm.championLevel.$error.max") lol pls. this level isn't 1-18 :(
-        
-      table(border="1") Stats
-        tr
-          td Health
-          td {{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}
-          td Health/Level
-          td {{selectedChampionData.stats.hpperlevel}}
-        tr
-          td Health Regen
-          td {{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}
-          td Health Regen/Level
-          td {{selectedChampionData.stats.hpregenperlevel}}
-        tr
-          td Armor 
-          td {{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}
-          td Armor/Level
-          td {{selectedChampionData.stats.armorperlevel}}
-        tr
-          td Magic Resistance
-          td {{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}
-          td Magic Resistance/Level
-          td {{selectedChampionData.stats.spellblockperlevel}}
-        tr
-          td Attack Damage
-          td {{selectedChampionData.stats.attackdamage + ((championLevel-1) * selectedChampionData.stats.attackdamageperlevel) | number: 1}}
-          td Attack Damage/Level
-          td {{selectedChampionData.stats.attackdamageperlevel}}
-        tr
-          td Mana
-          td {{selectedChampionData.stats.mp + ((championLevel-1) * selectedChampionData.stats.mpperlevel) | number: 1}}
-          td Mana/Level
-          td {{selectedChampionData.stats.mpperlevel}}
-        tr
-          td Mana Regen
-          td {{selectedChampionData.stats.mpregen + ((championLevel-1) * selectedChampionData.stats.mpregenperlevel) | number: 1}}
-          td Mana Regen/Level
-          td {{selectedChampionData.stats.mpregenperlevel}}
-        tr
-          td Attack Speed Offset
-          td {{selectedChampionData.stats.attackspeedoffset + ((championLevel-1) * selectedChampionData.stats.attackspeedperlevel) | number: 2}}
-          td Attack Speed/Level
-          td {{selectedChampionData.stats.attackspeedperlevel}}
-        tr
-          td Attack Range
-          td {{selectedChampionData.stats.attackrange}}
-          td Movement Speed
-          td {{selectedChampionData.stats.movespeed}}
-      
-      //- p(ng-bind-html='selectedChampionData.lore')
+    md-sidenav(layout='column' md-is-locked-open='$mdMedia("gt-sm")' md-component-id="left" class='md-sidenav-left md-whiteframe-z2' flex ng-click='toggleList()')
+      md-list
+        md-list-item(ng-repeat='champion in championData')
+          md-button(ng-click='changedChampionSelection(champion)' ng-class='{"selected" : champion === selectedChampionData }')
+            img(ng-src='{{ getChampionImage(champion.image.full) }}' class='avatar-icon' aria-label='{{champion.name}}')
+            span {{champion.name}}
   
-      itemset-form(ng-controller='ItemSetController')
+  
+    md-content(layout='row' sm-layout='column' class='md-padding' flex)
+      div(layout='column')
+      
+        md-card
+          md-card-header.no-padding-bottom(layout='row' sm-layout='column')
+            md-card-title(layout='column')
+              h2.md-headline {{selectedChampionData.name}}
+              h3.md-subhead.no-margin-top <i>{{(selectedChampionData.title.charAt(0).toUpperCase() + selectedChampionData.title.slice(1)) }}</i>
+            md-user-avatar
+              img(ng-if='selectedChampionData.image.full' ng-src='{{getChampionImage(selectedChampionData.image.full)}}')
+          md-card-content.no-padding-top
+            p {{selectedChampionData.name}}'s Lore: 
+            .champion-lore(contenteditable="false" flex ng-bind-html='selectedChampionData.lore')
+            
+        md-card(layout='column' layout-gt-sm='column')
+          md-card-header.no-padding-bottom(layout='row' sm-layout='column' flex-gt-sm='33')
+            md-card-title
+              h2.md-headline Base Stats for {{selectedChampionData.name}}
+          md-card-content.no-padding-bottom(flex-gt-sm='33')
+            form(name="championForm")
+              span Select a level (1-18):
+                button(class='blank-btn' ng-disabled='championLevel < 2' ng-click='championLevel = championLevel - 1')
+                  i(class='material-icons') remove_circle
+                input(type="number" name="championLevel" ng-model="championLevel" class='champion-level' min="1" max="18")
+                button(class='blank-btn' ng-disabled='championLevel > 17' ng-click='championLevel = championLevel + 1')
+                  i(class='material-icons') add_circle
+          md-card-content.no-padding-top(flex-gt-sm='33' layout-xs='column' layout-gt-xs='row')
+            table
+              tr
+                td Health (+{{selectedChampionData.stats.hpperlevel}}/lvl)
+                td {{selectedChampionData.stats.hp + ((championLevel-1) * selectedChampionData.stats.hpperlevel) | number:0 }}
+
+              tr
+                td Health Regen (+{{selectedChampionData.stats.hpregenperlevel}}/lvl)
+                td {{selectedChampionData.stats.hpregen + ((championLevel-1) * selectedChampionData.stats.hpregenperlevel) | number: 1}}
+
+              tr
+                td Armor (+{{selectedChampionData.stats.armorperlevel}}/lvl)
+                td {{selectedChampionData.stats.armor + ((championLevel-1) * selectedChampionData.stats.armorperlevel) | number: 1}}
+
+              tr
+                td Magic Resistance (+{{selectedChampionData.stats.spellblockperlevel}}/lvl)
+                td {{selectedChampionData.stats.spellblock + ((championLevel-1) * selectedChampionData.stats.spellblockperlevel) | number: 1}}
+            table
+              tr
+                td Attack Damage (+{{selectedChampionData.stats.attackdamageperlevel}}/lvl)
+                td {{selectedChampionData.stats.attackdamage + ((championLevel-1) * selectedChampionData.stats.attackdamageperlevel) | number: 1}}
+              tr
+                td Mana (+{{selectedChampionData.stats.mpperlevel}}/lvl)
+                td {{selectedChampionData.stats.mp + ((championLevel-1) * selectedChampionData.stats.mpperlevel) | number: 1}}
+              tr
+                td Mana Regen (+{{selectedChampionData.stats.mpregenperlevel}}/lvl)
+                td {{selectedChampionData.stats.mpregen + ((championLevel-1) * selectedChampionData.stats.mpregenperlevel) | number: 1}}
+              tr
+                td Attack Speed Offset (+{{selectedChampionData.stats.attackspeedperlevel}}/lvl)
+                td {{selectedChampionData.stats.attackspeedoffset + ((championLevel-1) * selectedChampionData.stats.attackspeedperlevel) | number: 2}}
+                
+            table
+              tr
+                td Attack Range
+                td {{selectedChampionData.stats.attackrange}}
+              tr
+                td Movement Speed
+                td {{selectedChampionData.stats.movespeed}}
+                
+        md-card.scrollable(layout='column' layout-gt-sm='column')
+          md-card-header(layout='row' sm-layout='column' flex-gt-sm='30')
+            md-card-title
+              h2.md-headline Item Set Filters
+          md-card-content(flex-gt-sm='70')
+            itemset-form(ng-controller='ItemSetController')
+            

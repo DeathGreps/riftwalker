@@ -1,10 +1,17 @@
 
-<h2>Item Set Form</h2>
-<ul id="accordion" class="accordion">
-  <li ng-repeat="item in itemTree" class="collapsed"> 
-    <div ng-click="onOff=!onOff" ng-class="{on:onOff}" class="link">{{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}</div>
-    <ul ng-if="onOff==true" class="submenu">
-      <li ng-repeat="tag in item.tags.filter(filterSORTINDEX)"><a href="#">{{tag}}</a></li>
-    </ul>
-  </li>
-</ul>
+<md-content layout="row" layout-gt-sm="row" flex="flex">
+  <ul id="accordion" class="accordion">
+    <li ng-repeat="item in itemTree" class="collapsed"> 
+      <div ng-click="onOff=!onOff" ng-class="{on:onOff}" class="link"><span>{{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}</span><span ng-class="{active:onOff, focus:onOff}" class="arrow-down"><i class="material-icons">keyboard_arrow_down</i></span></div>
+      <ul ng-if="onOff==true" class="submenu">
+        <li ng-repeat="tag in item.tags.filter(filterSORTINDEX)"><a ng-click="selectTreeTag(tag)">{{tag.charAt(0) + tag.slice(1).toLowerCase()}}</a></li>
+      </ul>
+    </li>
+  </ul>
+  <md-chips ng-model="treeTagsSelected" placeholder="hello">
+    <md-chip-template>{{$chip.charAt(0) + $chip.slice(1).toLowerCase()}}  </md-chip-template>
+    <button md-chip-remove="" class="chip-remove-btn">
+      <md-icon md-svg-icon="md-close"></md-icon>
+    </button>
+  </md-chips>
+</md-content>

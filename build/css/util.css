@@ -7,6 +7,21 @@
   /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"); }
 
+.no-padding-bottom {
+  padding-bottom: 0px; }
+
+.no-padding-top {
+  padding-top: 0px; }
+
+.no-margin-top {
+  margin-top: 0px; }
+
+.no-margin-bottom {
+  margin-bottom: 0px; }
+
+.scrollable {
+  overflow: auto; }
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;

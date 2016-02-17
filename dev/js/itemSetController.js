@@ -7,7 +7,9 @@ app.controller('ItemSetController', [ 'DataService', '$scope', '$http',function(
           method: 'GET',
           dataType: 'jsonp',
           // url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region
-          url: 'https://global.api.pvp.net/api/lol/static-data/' + DataService.getRegion().region.toLowerCase() + '/v1.2/item?itemListData=all&api_key='
+          url: 'https://global.api.pvp.net/api/lol/static-data/'
+            + DataService.getRegion().region.toLowerCase()
+            + '/v1.2/item?itemListData=all&api_key='
       }).then(function successCallback(response) {
         $scope.items = response.data;
         $scope.itemData = response.data.data;
@@ -28,11 +30,11 @@ app.controller('ItemSetController', [ 'DataService', '$scope', '$http',function(
   var itemImageUrl = "http://ddragon.leagueoflegends.com/cdn/6.2.1/img/item/";
   getItems();
 
-  $scope.selectTreeHeader = function(treeHeader) {
-    if ($scope.treeHeadersSelected.indexOf(treeHeader) >= 0) {
-      $scope.treeHeadersSelected.splice($scope.treeHeadersSelected.indexOf(treeHeader), 1);
+  $scope.selectTreeTag = function(treeHeader) {
+    if ($scope.treeTagsSelected.indexOf(treeHeader) >= 0) {
+      $scope.treeTagsSelected.splice($scope.treeTagsSelected.indexOf(treeHeader), 1);
     } else {
-      $scope.treeHeadersSelected.push(treeHeader);
+      $scope.treeTagsSelected.push(treeHeader);
     }
   }
 
@@ -48,7 +50,7 @@ app.controller('ItemSetController', [ 'DataService', '$scope', '$http',function(
   $scope.itemTree;
   $scope.itemGroups;
 
-  $scope.treeHeadersSelected = [];
+  $scope.treeTagsSelected = [];
 }])
 .directive('itemsetForm', function () {
   return {

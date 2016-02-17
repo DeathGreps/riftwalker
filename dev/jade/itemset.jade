@@ -1,17 +1,13 @@
-h2 Item Set Form
-
-ul(id='accordion' class='accordion')
-  li(ng-repeat='item in itemTree' class='collapsed') 
-    .link(ng-click='onOff=!onOff' ng-class='{on:onOff}') {{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}
-    ul(class='submenu' ng-if='onOff==true')
-      li(ng-repeat='tag in item.tags.filter(filterSORTINDEX)')
-        a(href="#") {{tag}}
-
-//- //- p {{itemBasic}}
-//- .itemUnit(ng-repeat="item in itemTree")
-//-   a(href='#' ng-click='selectTreeHeader(item)') {{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}
-//-   
-//- md-chips(ng-model='treeHeadersSelected')
-//-   md-chip-template
-//-     {{$chip.tags.filter(filterSORTINDEX).join()}}
-//- {{treeHeadersSelected}}
+md-content(layout='row' layout-gt-sm='row' flex)
+  ul(id='accordion' class='accordion')
+    li(ng-repeat='item in itemTree' class='collapsed') 
+      .link(ng-click='onOff=!onOff' ng-class='{on:onOff}')
+        span {{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}
+        span.arrow-down(ng-class='{active:onOff, focus:onOff}') <i class="material-icons">keyboard_arrow_down</i>
+      ul(class='submenu' ng-if='onOff==true')
+        li(ng-repeat='tag in item.tags.filter(filterSORTINDEX)')
+          a(ng-click='selectTreeTag(tag)') {{tag.charAt(0) + tag.slice(1).toLowerCase()}}
+  md-chips( ng-model='treeTagsSelected' placeholder='hello')
+    md-chip-template {{$chip.charAt(0) + $chip.slice(1).toLowerCase()}}  
+    button(md-chip-remove='' class='chip-remove-btn')
+      md-icon(md-svg-icon='md-close')
