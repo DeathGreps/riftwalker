@@ -1,52 +1,30 @@
-md-toolbar(layout='row' class='md-padding')
-  h2 Select your Items
-div(layout='column')
-  md-card(layout='column' layout-gt-sm='row')
-    md-card-header(layout='row' sm-layout='column' flex-gt-sm='20')
-      md-card-title.md-headline Item Filters
-    md-card-content(flex-gt-sm='80')
-      md-chips( ng-model='treeTagsSelected' placeholder='hello')
-        md-chip-template {{$chip.charAt(0) + $chip.slice(1).toLowerCase()}}  
-        button(md-chip-remove='' class='chip-remove-btn')
-          md-icon(md-svg-icon='md-close')
-
-  md-card(layout='colum')
-    md-card-header(layout='row' sm-layout='column' flex-gt-sm='20')
-      md-card-title.md-headline Item Categories
-    md-content(layout='row' layout-gt-sm='row' flex)
-    
-      ul(id='accordion' class='accordion')
-        li(ng-repeat='item in itemTree.slice(0, 3)' class='collapsed') 
-          .link(ng-click='onOff=!onOff' ng-class='{on:onOff}')
-            span {{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}
-            span.arrow-down(ng-class='{active:onOff, focus:onOff}') <i class="material-icons">keyboard_arrow_down</i>
-          ul(class='submenu' ng-if='onOff==true')
-            li(ng-repeat='tag in item.tags.filter(filterSORTINDEX)')
-              a(ng-click='selectTreeTag(tag)') {{tag.charAt(0) + tag.slice(1).toLowerCase()}}
-    
-      ul(id='accordion' class='accordion')
-        li(ng-repeat='item in itemTree.slice(3, 6)' class='collapsed') 
-          .link(ng-click='onOff=!onOff' ng-class='{on:onOff}')
-            span {{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}
-            span.arrow-down(ng-class='{active:onOff, focus:onOff}') <i class="material-icons">keyboard_arrow_down</i>
-          ul(class='submenu' ng-if='onOff==true')
-            li(ng-repeat='tag in item.tags.filter(filterSORTINDEX)')
-              a(ng-click='selectTreeTag(tag)') {{tag.charAt(0) + tag.slice(1).toLowerCase()}}
-    
-      ul(id='accordion' class='accordion')
-        li(ng-repeat='item in itemTree.slice(6)' class='collapsed') 
-          .link(ng-click='onOff=!onOff' ng-class='{on:onOff}')
-            span {{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}
-            span.arrow-down(ng-class='{active:onOff, focus:onOff}') <i class="material-icons">keyboard_arrow_down</i>
-          ul(class='submenu' ng-if='onOff==true')
-            li(ng-repeat='tag in item.tags.filter(filterSORTINDEX)')
-              a(ng-click='selectTreeTag(tag)') {{tag.charAt(0) + tag.slice(1).toLowerCase()}}
+//- md-toolbar.pad-left(layout='row')
+//-   h2 Select your Items
+md-content.md-padding(layout-gt-sm='row' layout='column' flex)
+  md-content(flex='20')
+    .md-headline Item Categories
+    ul.no-select(id='accordion' class='accordion' layout='column')
+      li(ng-repeat='item in itemTree' class='collapsed') 
+        .link(ng-click='onOff=!onOff' ng-class='{on:onOff}')
+          span {{item.header.charAt(0).toUpperCase() + item.header.slice(1).toLowerCase()}}
+          span.arrow-down(ng-class='{active:onOff, focus:onOff}') <i class="material-icons">keyboard_arrow_down</i>
+        ul(class='submenu' ng-if='onOff==true')
+          li.no-list-style.round-boxed(ng-repeat='tag in item.tags.filter(filterSORTINDEX)')
+            a(ng-click='selectTreeTag(tag); treeTagsUpdated()') {{tag.charAt(0) + tag.slice(1).toLowerCase()}}
   
-  md-card(layout='column')
-    md-card-header(layout='row' sm-layout='column' flex-gt-sm='20')
-      md-card-title.md-headline Items
-    md-content(layout='column')
-      md-grid-list(md-cols="3" md-cols-gt-xs='10' md-cols-gt-md='20' md-row-height='1:1' md-gutter='2px')
-        md-grid-tile(md-colspan='1' ng-repeat='(key,value) in itemData')
+  md-content(layout='column' flex='50')
+    md-chips(ng-model='treeTagsSelected' placeholder='Subcategory Filters' secondary-placeholder='Subcategory Filters')
+      md-chip-template {{$chip.charAt(0) + $chip.slice(1).toLowerCase()}}  
+      button(md-chip-remove='' ng-click='treeTagsUpdated(treeTagsSelected)' class='chip-remove-btn')
+        md-icon(md-svg-icon='md-close')
+    md-content(layout-padding)
+      md-grid-list(md-cols="4" md-cols-gt-xs='8' md-cols-gt-md='11'
+        md-row-height-gt-md='1:1' md-row-height='4:3' md-gutter='5px')
+        md-grid-tile(md-colspan='1' ng-repeat='(key,value) in filteredItemData')
           md-grid-tile-header 
             img(ng-src='{{ getItemImage(value.image.full) }}') 
+            
+  md-content(flex='30')
+    .md-headline Item Blocks
+    md-content(layout='column')
+      p Hello my name is kevin

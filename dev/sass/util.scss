@@ -18,6 +18,10 @@ $roboto-font: 'Roboto', sans-serif;
   padding-top: 0px;
 }
 
+.pad-left {
+  padding-left: 20px;
+}
+
 .no-margin-top {
   margin-top: 0px;
 }
@@ -28,6 +32,27 @@ $roboto-font: 'Roboto', sans-serif;
 
 .scrollable {
   overflow: auto;
+}
+
+.no-list-style {
+  list-style-type: none;
+}
+
+.round-boxed {
+  border: 1px solid #000;
+  border-radius: 5%;
+  margin: 1px;
+  padding: 2px;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
 }
 
 md-grid-tile {
