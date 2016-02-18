@@ -6,10 +6,10 @@ app.controller('ChampionSelectorController', [ 'DataService', '$scope', '$http',
         $http({
             method: 'GET',
             dataType: 'jsonp',
-            // url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region
-            url: 'https://global.api.pvp.net/api/lol/static-data/'
-              + DataService.getRegion().region.toLowerCase()
-              + '/v1.2/champion?champData=all&api_key='
+            url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region + '/champion'
+            // url: 'https://global.api.pvp.net/api/lol/static-data/'
+            //   + DataService.getRegion().region.toLowerCase()
+            //   + '/v1.2/champion?champData=all&api_key='
         }).then(function successCallback(response) {
 
             $scope.championData = response.data.data;

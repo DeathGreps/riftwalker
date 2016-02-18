@@ -6,10 +6,10 @@ app.controller('ItemSetController', [ 'DataService', '$scope', '$http', '$filter
       $http({
           method: 'GET',
           dataType: 'jsonp',
-          // url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region
-          url: 'https://global.api.pvp.net/api/lol/static-data/'
-            + DataService.getRegion().region.toLowerCase()
-            + '/v1.2/item?itemListData=all&api_key='
+          url: '/api/staticdata/' + DataService.getRegion().host + '/' + DataService.getRegion().region + '/item'
+          // url: 'https://global.api.pvp.net/api/lol/static-data/'
+          //   + DataService.getRegion().region.toLowerCase()
+          //   + '/v1.2/item?itemListData=all&api_key='
       }).then(function successCallback(response) {
         $scope.items = response.data;
         $scope.itemData = response.data.data;

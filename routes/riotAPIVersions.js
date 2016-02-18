@@ -1,8 +1,9 @@
 var riotAPIVersions = {
     champion: 'v1.2',
+    championmastery: '',
     currentGame: 'v1.0',
     featuredGames: 'v1.0',
-    games: 'v1.3',
+    game: 'v1.3',
     league: 'v2.5',
     lolStaticData: 'v1.2',
     lolStatus: 'v1.0',

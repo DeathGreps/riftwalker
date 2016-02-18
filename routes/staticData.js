@@ -6,14 +6,19 @@ var api_key = require('../api_key.json');
 var staticData = express.Router();
 var riotAPIVersions = require('./riotAPIVersions');
 
-staticData.route('/:host/:region')
+staticData.route('/:host/:region/:datatype')
 .get(function(req, res) {
 
-    var riotRequestURI = 'https://' + req.params.host + 
+    var riotRequestURI = 'https://' + req.params.host +
         '/api/lol/static-data/' + req.params.region.toLowerCase() +
-        '/' + riotAPIVersions.lolStaticData + '/champion?champData=all&api_key=' + api_key.key;
+        '/' + riotAPIVersions.lolStaticData;
 
-    
+    if(req.params.datatype == 'champion')
+      riotRequestURI += '/champion?champData=all&api_key=' + api_key.key;
+
+    if(req.params.datatype == 'item')
+      riotRequestURI += '/item?itemListData=all&api_key=' + api_key.key;
+
     https.get(riotRequestURI, function(riotRes) {
         riotRes.setEncoding('utf8');
         var data = "";
