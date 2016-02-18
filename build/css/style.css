@@ -193,3 +193,13 @@ span.arrow-down.focus i {
 
 md-chip-template {
   margin-right: 5px; }
+
+#footer {
+  width: 45%;
+  position: fixed;
+  margin-right: 0.5em;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8em;
+  text-align: right;
+  color: #000; }
