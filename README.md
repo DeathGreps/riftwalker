@@ -1,6 +1,6 @@
 # Riftwalker
 
-A side project for creating item sets on League of Legends.
+A side project for creating item sets on League of Legends. Look at a demo here: http://riftwalker.herokuapp.com/
 
 #### Requirements
 
